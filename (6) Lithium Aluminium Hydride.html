@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title>Centered Text with Image</title>
+  
+  <!-- Importing Montserrat font from Google Fonts -->
+  <link href = "https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel = "stylesheet">
+  
+  <style>
+    /* Basic reset for margins and paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Set body height to 100% to cover the entire screen */
+    body, html {
+      height: 100%;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    /* Flexbox centering */
+    .centered-text {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      justify-content: flex-start; /* Align items to the top of the viewport */
+      align-items: center; /* Center content horizontally */
+      text-align: left; /* Align text to the left */
+      padding: 20px; /* Some padding for better look */
+      font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+      overflow-y: auto; /* Enable vertical scrolling */
+      max-width: 80%; /* Limit the maximum width of the container */
+      margin: auto; /* Center the container horizontally */
+    }
+
+    /* Image styling */
+    img {
+      width: 50%; /* Set the width of the image */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px; /* Space between image and text */
+    }
+
+    /* Text below image */
+    .image-text {
+      width: 50%; /* Match the width of the text to the image */
+      margin-top: 10px; /* Add some space between text and image */
+      line-height: 1.6; /* Optional: Adjust line height for better readability */
+      color: grey; /* Set text color to grey */
+      /* Remove padding-left to align text directly under image */
+      padding: 0; /* Reset any padding */
+    }
+
+    /* Add media query for small screens */
+    @media (max-width: 768px) {
+      .centered-text {
+        font-size: 3.5vw; /* Adjust font size based on viewport width for mobile */
+        padding: 20px; /* Ensure padding works well on mobile */
+      }
+
+      img, .image-text {
+        width: 70%; /* Increase image and text size on smaller screens */
+      }
+    }
+
+    /* For larger screens like laptops */
+    @media (min-width: 769px) {
+      .centered-text {
+        font-size: 1.2vw; /* Decrease font size for larger screens */
+        max-width: 70%; /* Limit text width to avoid very long lines */
+      }
+    }
+
+    p {
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+  </style>
+</head>
+
+<body>
+  <div class = "centered-text">
+    <img src="https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/LiAlH4%20(1).png" alt="Hydrogenation image">
+    <p class = "image-text">
+        <b>(1) LiAlH <sub>4</sub> is mainly used for the reduction of polar unsaturation. Carbon-Carbon double bonds and triple bonds are unaffected due to non-polarity. Aldehydes (RCHO) and Ketones (RCOR) on treatment with Lithium Aluminium Hydride LiAlH4 in dry ether and subsequent acidification yield primary alcohols RCH <sub>2</sub> OH and secondary alcohols RCH(OH)R&#8217; respectively, for this purpose we can also use NaBH4 but LiAlH <sub>4</sub> is a power reducing agent and reduces many other functional groups such as carboxylic acid and its derivatives, nitro compounds. Acid chlorides (RCOOCl) on treatment with Lithium Aluminium Hydride LiAlH <sub>4</sub> in dry ether and subsequent acidification yield primary alcohols RCH <sub>2</sub> OH. Esters (RCOOR) on treatment with Lithium Aluminium Hydride LiAlH <sub>4</sub> in dry ether and subsequent acidification yield primary alcohols RCH <sub>2</sub> OH and ROH. Lactones (cyclic esters) are reduced to corresponding diols. Acid anhydrides (RCO) <sub>2</sub> O on treatment with LiAlH4 yield primary alcohols RCH <sub>2</sub> OH. Primary (RCONH <sub>2</sub> ), secondary (RCONHR) and tertiary amides (RCONR <sub>2</sub> ) on reaction with LiAlH <sub>4</sub> give primary (RCH <sub>2</sub> NH <sub>2</sub> ), secondary (RCH <sub>2</sub> NHR) and tertiary amines (RCH <sub>2</sub> NR <sub>2</sub> respectively (can also be done using H <sub>2</sub> /Ni) Cyclic amides (Lactams) on reduction give cyclic amines. Nitriles (RCN) are converted into primary amines (RCH <sub>2</sub> NH <sub>2</sub> ). Isocyanides are converted into N-Methylamines (secondary amines) similar to H <sub>2</sub> /Ni. Epoxides when treated with LiAH4 in dry ether and subsequent acidification with dilute sulphuric acid gives alcohols. Oximes (>C=NOH), both ketoximes and aldoximes are reduced to primary amines (>CH-NH <sub>2</sub> Aliphatic nitro compounds are reduced to amines although for aromatic nitro compounds we use metal/HCl not LiAlH <sub>4</sub> , if we use LiAlH <sub>4</sub> > for aromatic nitro compounds ArNO <sub>2</sub> we get azo compounds (Ar-N=N-Ar), nitroso compounds can also be reduced to azo compounds. Peroxides are reduced to 2 moles of alcohols. Sulfoxides (RSOR) are reduced to sulphides (RSR). Quinones are reduced to hydroquinones by LiAlH <sub>4</sub> as well as SnCl <sub>2</sub> /HCl </strong> </b>
+    </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/LiAlH4%20(2).png" alt = "Hydrogenation Image 2">
+    <p class = "image-text">
+        <b><strong>(2) Primary and secondary alkyl halides and alkyl sulphonates are readily reduced to corresponding alkanes by treatment with LiAlH<sub>4</sub>in dry ether or THF solvent. Tertiary alkyl halides and sulphonates mainly undergo elimination reaction to give alkenes.</strong></b>
+    </p>
+  </div>
+</body>
+</html>

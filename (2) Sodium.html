@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title>Centered Text with Image</title>
+  
+  <!-- Importing Montserrat font from Google Fonts -->
+  <link href = "https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel = "stylesheet">
+  
+  <style>
+    /* Basic reset for margins and paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Set body height to 100% to cover the entire screen */
+    body, html {
+      height: 100%;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    /* Flexbox centering */
+    .centered-text {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      justify-content: flex-start; /* Align items to the top of the viewport */
+      align-items: center; /* Center content horizontally */
+      text-align: left; /* Align text to the left */
+      padding: 20px; /* Some padding for better look */
+      font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+      overflow-y: auto; /* Enable vertical scrolling */
+      max-width: 80%; /* Limit the maximum width of the container */
+      margin: auto; /* Center the container horizontally */
+    }
+
+    /* Image styling */
+    img {
+      width: 50%; /* Set the width of the image */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px; /* Space between image and text */
+    }
+
+    /* Text below image */
+    .image-text {
+      width: 50%; /* Match the width of the text to the image */
+      margin-top: 10px; /* Add some space between text and image */
+      line-height: 1.6; /* Optional: Adjust line height for better readability */
+      color: grey; /* Set text color to grey */
+      /* Remove padding-left to align text directly under image */
+      padding: 0; /* Reset any padding */
+    }
+
+    /* Add media query for small screens */
+    @media (max-width: 768px) {
+      .centered-text {
+        font-size: 3.5vw; /* Adjust font size based on viewport width for mobile */
+        padding: 20px; /* Ensure padding works well on mobile */
+      }
+
+      img, .image-text {
+        width: 70%; /* Increase image and text size on smaller screens */
+      }
+    }
+
+    /* For larger screens like laptops */
+    @media (min-width: 769px) {
+      .centered-text {
+        font-size: 1.2vw; /* Decrease font size for larger screens */
+        max-width: 70%; /* Limit text width to avoid very long lines */
+      }
+    }
+
+    p {
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+  </style>
+</head>
+
+<body>
+  <div class = "centered-text">
+    <img src = "/Users/soham_chawan/Desktop/Sodium (1).png" alt = "Sodium Image 1">
+    <p class = "image-text">
+        <b>(1) Alkyl halide on treatment with Na in dry ether gives coupling product alkane. This reaction is called Wurtz reaction and generally used for preparation of alkanes with even number of carbon atoms, for alkanes with odd number of carbon atoms the percentage yield is very poor. Generally, Diethyl ether, T.H.F or Dioxane are used as solvent. Methane is not prepared using the Wurtz reaction. Reaction fails give desired coupling alkane when starting alkyl halide is tertiary and instead gives alkene and corresponding alkane as the major products (Due to elimination reaction and coupling product alkane in negligible amount. Two mechanics are proposed for this reaction one is ionic mechanism forming alkyl sodium as intermediate and another free radical mechanism by forming free radical intermediate. Reactivity order is RI>RBr>RCl>RF, and we also get some side reaction products due to intermolecular hydrogenation of intermediate free radical or by elimination method (e.g. when ethyl halide is reacted with Na/Et<sub>2</sub>) we get three organic products Butane (major), Ethene (minor) and Ethane (minor) and for tertiary butyl chloride we get 2-Methylpropene (major), 2-Methylpropane (major) and 2,2,3,3-Tetramethylbutane (negligible amount)) In intramolecular reaction where same molecule has two halide groups there we can get a ring or double bond in the ring (provided ring sie is of 8 or more carbon atoms as per Bredt's rule). Please note that when we take one compound as aryl halide and known as WURTZ-FITTIG REACTION. Aryl halides (C<sub>6</sub>H<sub>5</sub>Cl) also give analogous compounds when treated with sodium in dry ether, in which two aryl groups are joined together (C<sub>6</sub>H<sub></sub>-C<sub>6</sub>H<sub>5</sub>). It is called Fittig Reaction. </b>
+    </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "/Users/soham_chawan/Desktop/Sodium (2).png" alt = "Sodium Image 2">
+    <p class = "image-text">
+        <b>(2) Na and C<sub>2</sub>H<sub>5</sub>OH in inert solvent such as toluene or xylene mainly used for the reduction of ester into primary alcohols (Bouveault-Blanc Reduction). Na-C<sub>2</sub>H<sub>5</sub>OH can also be used for reduction of aldehydes and ketones into primary alcohols. Alkane nitrile can be reduced into primary amine, oximes and amides are reduced to amines. Alkyl halide (R-X) can be reduced into alkane (R-H). Nonterminal alkyne gets converted in trans alkene.</b>
+    </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "/Users/soham_chawan/Desktop/Sodium (3).png" alt = "Hydrogenation Image 3">
+    <p class = "image-text">
+        <b>(3) Nonterminal alkynes (internal alkynes) on treatment with Na (or Li or K) in liquid NH<sub>3</sub> (or C<sub>2</sub>H<sub>5</sub>NH<sub>2</sub> or alcohol often ethyl, isopropyl or tert-butylalcohol) give anti-addition of two hydrogen across the triple bond (function is opposite to H<sub>2</sub>/Lindlar's catalyst). Benzene ring gets converted into Cyclohexadiene. This is dissolving metal reduction method and known as Birch Reduction. Aromatic rings are also reduced by this reagent and 1,4 addiion of two H takes place. When electron releasing groups such as methyl, methoxy etc. are attached they increase the rate and are found on non-reduced positions of the product. When electron withdrawing groups such as -COOH, -CONH<sub>2</sub> etc. are attached they decrease the rate and are found on reduced positions of the group. The mechanism involves solvated electrons. Terminal alkyne reacts as an acid and gives sodium alkynide. An ether gets converted into alkane and alcohol.</b>
+    </p>
+    </div>
+    <div class = "centered-text">
+        <img src = "/Users/soham_chawan/Desktop/Sodium (4).png" alt = "Hydrogenation Image 4">
+        <p class = "image-text">
+            <b>(4) Na (or K) metal reacts with compounds like alcohol, terminal alkyne and liberate H<sub>2</sub> gas. Sodium alkynide and alkoxide can act as nucleophile (give substitution product with methyl halide or primary alkyl halide with unbranching at beta carbon) and as base (give elimination product alkene wih secondary and tertiary alkyl halide).</b>
+        </p>
+    </div>
+</body>
+</html>

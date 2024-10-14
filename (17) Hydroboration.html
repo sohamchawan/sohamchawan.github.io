@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Text with Image</title>
+  
+  <!-- Importing Montserrat font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Basic reset for margins and paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Set body height to 100% */
+    body, html {
+      height: 100%;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    /* Container for image and text */
+    .centered-text {
+      width: 70%; /* Restrict width to make text more readable */
+      margin: 20px auto; /* Center the container horizontally */
+      text-align: left; /* Align text to the left */
+      font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    }
+
+    /* Image styling */
+    img {
+      width: 100%; /* Set the image width to fill the container */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px; /* Space between image and text */
+    }
+
+    /* Text block styling */
+    .image-text {
+      margin-top: 10px;
+      line-height: 1.6; /* Adjust line height for better readability */
+      color: grey;
+    }
+
+    /* Add media query for small screens */
+    @media (max-width: 768px) {
+      .centered-text {
+        width: 90%; /* Allow more space for mobile view */
+      }
+
+      img {
+        width: 100%; /* Ensure image fits smaller screens */
+      }
+    }
+
+    /* For larger screens */
+    @media (min-width: 769px) {
+      .centered-text {
+        width: 60%; /* Narrower text for larger screens */
+      }
+    }
+
+    p {
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="centered-text">
+    <img src="https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Hydroboration%20(1).png" alt="Hydroboration Reaction Image">
+    
+    <h1>Hydroboration Reaction</h1>
+    <p class="image-text">The <strong>hydroboration reaction</strong> is an important organic reaction used to add hydrogen and boron across a double bond (alkenes) or a triple bond (alkynes). It is widely used in organic synthesis because of its regioselectivity and anti-Markovnikov nature.</p>
+
+    <p class = "image-text">
+        <h2>General Features:</h2>
+        <p class = "image-text"></p>
+        <ul>
+            <li><strong>Reagent:</strong> The most common reagent used in hydroboration is <code>borane (BH₃)</code>, usually stabilized as a complex, such as <code>borane-tetrahydrofuran (BH₃-THF)</code> or <code>diborane (B₂H₆)</code>.</li>
+        </ul>
+        </p>
+    </p>    
+    <p class = "image-text"> 
+        <h2>Reaction Mechanism:</h2>
+        <p class="image-text">The reaction involves a concerted process where the boron atom from BH₃ adds to the <strong>less substituted carbon</strong> of the double bond (anti-Markovnikov addition), while hydrogen adds to the <strong>more substituted carbon</strong>. This results in the formation of an alkylborane intermediate.</p>
+    </p>
+    <p class = "image-text">        
+        <h2>Oxidation Step:</h2>
+        <p class="image-text">After the initial hydroboration, the alkylborane intermediate can be oxidized using hydrogen peroxide (<code>H₂O₂</code>) in a basic medium (sodium hydroxide, NaOH). This converts the boron into a hydroxyl group (-OH), giving a <strong>primary alcohol</strong>.</p>
+    </p>
+    <p class = "image-text">
+        <h2>Key Characteristics:</h2>
+        <p class = "image-text">
+            <ul>
+                <li><strong>Regioselectivity:</strong> The boron atom attaches to the less substituted carbon (anti-Markovnikov), which makes it different from many other reactions (e.g., Markovnikov addition in electrophilic additions).</li>
+                <li><strong>Stereoselectivity:</strong> Hydroboration is <strong>syn-addition</strong>, meaning both the boron and the hydrogen are added to the same side of the double bond, leading to retention of stereochemistry.</li>
+            </ul>
+        </p>
+    </p>
+    <p class = "image-text">
+        <h2>Applications:</h2>
+        <p class = "image-text">
+            <ul>
+                <li>Hydroboration is used to prepare <strong>alcohols</strong> in a controlled manner.</li>
+                <li>It's useful in the synthesis of <strong>organoboranes</strong>, which can be further used in various synthetic applications like <strong>Suzuki coupling</strong>.</li>
+            </ul>
+        </p>
+    </p>
+  </div>
+</body>
+</html>

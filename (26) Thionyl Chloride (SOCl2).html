@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title>Centered Text with Image</title>
+  
+  <!-- Importing Montserrat font from Google Fonts -->
+  <link href = "https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel = "stylesheet">
+  
+  <style>
+    /* Basic reset for margins and paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Set body height to 100% to cover the entire screen */
+    body, html {
+      height: 100%;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    /* Flexbox centering */
+    .centered-text {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      justify-content: flex-start; /* Align items to the top of the viewport */
+      align-items: center; /* Center content horizontally */
+      text-align: left; /* Align text to the left */
+      padding: 20px; /* Some padding for better look */
+      font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+      overflow-y: auto; /* Enable vertical scrolling */
+      max-width: 80%; /* Limit the maximum width of the container */
+      margin: auto; /* Center the container horizontally */
+    }
+
+    /* Image styling */
+    img {
+      width: 50%; /* Set the width of the image */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px; /* Space between image and text */
+    }
+
+    /* Text below image */
+    .image-text {
+      width: 50%; /* Match the width of the text to the image */
+      margin-top: 10px; /* Add some space between text and image */
+      line-height: 1.6; /* Optional: Adjust line height for better readability */
+      color: grey; /* Set text color to grey */
+      /* Remove padding-left to align text directly under image */
+      padding: 0; /* Reset any padding */
+    }
+
+    /* Add media query for small screens */
+    @media (max-width: 768px) {
+      .centered-text {
+        font-size: 3.5vw; /* Adjust font size based on viewport width for mobile */
+        padding: 20px; /* Ensure padding works well on mobile */
+      }
+
+      img, .image-text {
+        width: 70%; /* Increase image and text size on smaller screens */
+      }
+    }
+
+    /* For larger screens like laptops */
+    @media (min-width: 769px) {
+      .centered-text {
+        font-size: 1.2vw; /* Decrease font size for larger screens */
+        max-width: 70%; /* Limit text width to avoid very long lines */
+      }
+    }
+
+    p {
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+  </style>
+</head>
+
+<body>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/SOCl2%20(1).png" alt="Hydrogenation image">
+    <h5 class = "image-text">
+      <strong>THIONYL CHLORIDE</strong>
+    </h5>
+
+    <p class="image-text">
+      (1) CONVERSION OF ALCOHOL INTO ALKYL CHLORIDE (DARZEN&#8217;S METHOD): Alkyl chlorides can be prepared from corresponding alcohols by the reaction with SOCl<sub>2</sub>. The reaction take place by SN<sub>i</sub> mechanism (retention in configuration) but if we use base such as pyridine C5H5N then inversion takes place and reaction occurs by normal SN2. SOCl2 is preferred over other reagents such as PCl<sub>5</sub> and PCl<sub>3</sub> because in case of SOCl<sub>2</sub> by-products are gases (SO<sub>2</sub> and HCl and escape from the reaction vessel but in case of PCl<sub>5</sub> and PCl<sub>3</sub> the by-products are POCl<sub>3</sub> and H<sub>3</sub>PO<sub>3</sub>) and these are non-volatile so purification of alkyl halide requires separation.
+    </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/SOCl2%20(2).png" alt="Hydrogenation image">
+    <p class="image-text"><strong>(2) CONVERSION OF CARBOXYLIC ACID INTO ACID CHLORIDE: Acid chlorides can be obtained by reacting carboxylic acid with SOCl<sub>2</sub>.</strong>
+    </p>
+  </div>
+  <div class = "centered-text">
+  <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/SOCl2%20(3).png" alt="Hydrogenation image">
+    <p></p>
+    <p class="image-text">
+      <strong><b>(3) CONVERSION OF PRIMARY AMIDES INTO NITRILES:</b> Primary amides when heated with SOCl<sub>2</sub> they undergo dehydration to yield nitriles. For dehydration of primary amides, we can also use PCl<sub>5</sub>, P4O<sub>10</sub>, POCl<sub>3</sub> C<sub>6</sub>H<sub>5</sub>SO<sub>2</sub>Cl and Al<sub>2</sub>O<sub>3</sub>.</strong>
+    </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/SOCl2%20(4).png" alt="Hydrogenation image">
+    <p class="image-text">
+      <strong><b>(4) BECKMANN REARRANGEMENT (CONVERSION OF KETOXIMES INTO AMIDES):</b> Ketoximes (RR&#8217;C=NOH) when treated with acidic reagents such as SOC<sub>l2</sub>, they rearrange to substituted amides (RCONHR&#8217; or R&#8217;CONHR). The group that migrates is generally the one anti to -OH of oxime but when attached alkyl groups of oximes are both bulky then mixtures of two amides are possible (RCONHR&#8217; and R&#8217;CONHR). The oximes of cyclic ketones give ring enlargement. Among other reagents used are PCl5, Concentrated H<sub>2</sub>SO<sub>4</sub>, HCOOH, Liquid SO<sub>2</sub>, HMPA, P<sub>2</sub>O<sub>5</sub> -Methanesulphonic acid, HCl-HOAc-AC<sub>2</sub>O, Silica gel and polyphosphoric acid.</strong>
+    </p>
+  </div>
+</body>
+</html>

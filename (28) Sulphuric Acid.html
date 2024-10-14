@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title>Centered Text with Image</title>
+  
+  <!-- Importing Montserrat font from Google Fonts -->
+  <link href = "https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel = "stylesheet">
+  
+  <style>
+    /* Basic reset for margins and paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Set body height to 100% to cover the entire screen */
+    body, html {
+      height: 100%;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    /* Flexbox centering */
+    .centered-text {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      justify-content: flex-start; /* Align items to the top of the viewport */
+      align-items: center; /* Center content horizontally */
+      text-align: left; /* Align text to the left */
+      padding: 20px; /* Some padding for better look */
+      font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+      overflow-y: auto; /* Enable vertical scrolling */
+      max-width: 80%; /* Limit the maximum width of the container */
+      margin: auto; /* Center the container horizontally */
+    }
+
+    /* Image styling */
+    img {
+      width: 50%; /* Set the width of the image */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px; /* Space between image and text */
+    }
+
+    /* Text below image */
+    .image-text {
+      width: 50%; /* Match the width of the text to the image */
+      margin-top: 10px; /* Add some space between text and image */
+      line-height: 1.6; /* Optional: Adjust line height for better readability */
+      color: grey; /* Set text color to grey */
+      /* Remove padding-left to align text directly under image */
+      padding: 0; /* Reset any padding */
+    }
+
+    /* Add media query for small screens */
+    @media (max-width: 768px) {
+      .centered-text {
+        font-size: 3.5vw; /* Adjust font size based on viewport width for mobile */
+        padding: 20px; /* Ensure padding works well on mobile */
+      }
+
+      img, .image-text {
+        width: 70%; /* Increase image and text size on smaller screens */
+      }
+    }
+
+    /* For larger screens like laptops */
+    @media (min-width: 769px) {
+      .centered-text {
+        font-size: 1.2vw; /* Decrease font size for larger screens */
+        max-width: 70%; /* Limit text width to avoid very long lines */
+      }
+    }
+
+    p {
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+  </style>
+</head>
+
+<body>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Sulphuric%20Acid%20(1).png" alt="Hydrogenation image">
+    <p class = "image-text">
+        <b> <strong>(1) DEHYDRATION OF ALCOHOLS TO ALKENES: When alcohols are heated with H<sub>2</sub>SO<sub>4</sub> (or we can also use H<sub>3</sub>PO<sub>4</sub>) they undergo dehydration (elimination of water) to form alkenes. The temperature and concentration of acid depend upon the structure of alcohols. Tertiary alcohols undergo dehydration more readily and hence lower temperature and moderate concentration are required. Primary alcohols undergo dehydration with difficulty so require high temperature and high concentration of H<sub>2</sub>SO<sub>4</sub>. Order of dehydration is tertiary alcohol > secondary alcohol > primary alcohol. Tertiary and secondary alcohols dehydration take place by E1 mechanism so via carbocation mechanism and rearrangement or ring expansion may take place, more stable carbocation implies more rate of dehydration of alcohol. Reaction is regioselective and forms Zaitsev&#8217;s product (more substituted alkene) as major. Primary alcohols undergo dehydration by E2 mechanism because of low stability of primary carbocation. Although primary alcohols follow E2 mechanism but here also we get rearranged products as formed alkene can accept proton to generate carbocation (as dehydration is reversible) and here formed carbocation will be secondary or tertiary. If the alcohols can be evaporated, the vapour phase elimination over Al<sub>2</sub>O<sub>3</sub> at 350<sup>o</sup>C is an excellent method because side reactions are greatly reduced, al three class of alcohols are dehydrated by passing over alumina (mechanism with alumina is uncertain). Other oxides which can be used are Cr<sub>2</sub>O<sub>3</sub> and ThO<sub>2</sub>. Please note for ThO<sub>2</sub> dehydration follows Hofmann rule (less substituted = bond) while for other oxides dehydration is as per Zaitsev&#8217;s rule. Dehydration of alcohols to alkenes is possible with reagent POCl<sub>3</sub> (Phosphorous oxychloride)/Pyridine under milder condition, -OH group of alcohol gets converted into -OPOCl<sub>2</sub> which is a good leaving group. Pyridine acts as base and reaction follows E2 mechanism.</strong></b>
+    </p>
+    <p class = "image-text">
+      <b><strong>(2) BIMOLECULAR DEHYDRATION OF PRIMARY ALCOHOLS TO GIVE ETHERS: When primary alcohols are heated with concentrated H<sub>2</sub>SO<sub>4</sub> at 140<sup>o</sup>C they undergo bimolecular dehydration to form symmetrical ethers. With two different alcohols we get unsymmetrical ether but the % yield is very poor. The reaction occurs by SN<sub>2</sub> substitution of water from a protonated alcohol molecule by an unprotonated molecule of alcohol. Secondary and tertiary alcohols generally undergo elimination. Ethers can also be obtained by passing vapours of alcohol over Alumina Al<sub>2</sub>O<sub>3</sub> or Thoria THO<sub>2</sub> at 250<sup>o</sup>C.</strong></b>
+    </p>
+    <p class = "image-text">
+      <b><strong>(3) BECKMANN REARRANGEMENT (CONVERSION OF KETOXIMES INTO AMIDES): Ketoximes (RR&#8217;C=NOH) when treated with acidic reagents such as Concentrated H<sub>2</sub>SO<sub>4</sub>, they rearrange to substituted amides (RCONHR&#8217; or R&#8217;CONHR). The group that migrates is generally the one anti to -OH of oxime but when attached alkyl groups of oxime are both bulky then mixtures of two amides are possible (RCONHR&#8217; and R&#8217;CONHR). The oximes of cyclic ketones give ring enlargement. Among other reagents used are SOCl<sub>2</sub>, PCl<sub>5</sub>, HCOOH, Liquid SO<sub>2</sub>, HMPA, P<sub>2</sub>O<sub>5</sub> -Methanesulphonic acid, HCl-HOAc-AC2O, Silica gel and polyphosphoric acid.</strong></b>
+  </p>
+  <p class = "image-text">
+    <b><strong>(4) SULPHONATION OF BENZENE: Concentrated H<sub>2</sub>SO<sub>4</sub> containing dissolved SO<sub>3</sub> (Fuming sulphuric acid = H<sub>2</sub>S<sub>2</sub>O<sub>7</sub>) when reacts with benzene one -H of benzene gets substituted by -SO<sub>3</sub>H. Reaction follows EAS (electrophilic aromatic substitution). Phenol is converted into o-hydroxybenzenesulphonicacid (major at low temperature, below 25<sup>o</sup>C) and p-hydroxybenzenesulphonicacid (major at high temperature, at 100<sup>o</sup>c).</strong></b>
+  </p>
+  <p class = "image-text">
+    <b><strong>(5) SULPHONATION OF ALKANES: Substitution of -H of alkane with group -SO<sub>3</sub>H. Normal alkanes having carbon atoms 6 or more can be sulphonated with fuming sulphuric acid at around 400<sup>o</sup>C. The order of reactivity 3<sup>o</sup>H > 2<sup>o</sup>H > 1<sup>o</sup>H. Smaller alkanes can be sulphonated if they have tertiary H.</strong></b>
+  </p>
+  <p class = "image-text">
+    <b><strong>(6) HYDRATION OF ALKENES: It is reverse of dehydration. Reaction follows carbocation mechanism (so rearrangement whenever possible), If we want addition of water without rearrangement then we use methods OXYMERCURATION-DEMERCURATION (for Markovnikov&#8217;s addition) and HYDROBORATION-OXIDATION (for anti-Markovnikov&#8217;s addition). With concentrated sulphuric acid alkenes can give alkyl hydrogensulphates. With heating and concentrated sulphuric acid alkenes may undergo dimerization.</strong></b>
+  </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Sulphuric%20Acid%20(2).png" alt="Hydrogenation image">
+    <p class = "image-text">
+        <b> <strong>(7) PINACOLE-PINACOLONE REARRANGEMENT: When vicinal diols (Glycols) are treated with acids, they can be rearranged to give aldehydes or ketones. This reaction is called PINACOL-PINACOLONE rearrangement. The reaction gets its name from the typical compound pinacol (CH<sub>3</sub>)<sub>2</sub>C(OH)C(OH)(CH<sub>3</sub>)<sub>2</sub>, which is rearranged to pinacolone (CH<sub>3</sub>)<sub>3</sub>COCH<sub>3</sub>. First one of the OH gets protonated by the acid and then carbocation forms (on that carbon which produces more stable carbocation), then 1,2 migration of group like alkyl or aryl from another carbon so that positive charge can be adjacent to oxygen. It may seem odd that a migration takes place when the positive charge is already at a tertiary position but carbocations stabilised by an oxygen atom are even more stable than tertiary alkyl cations. It is obvious that other compounds in which a positive charge can be placed on a carbon alpha to one bearing an -OH can also give rearrangement. This is true for beta amino alcohols, which rearrange on treatment with HNO<sub>2</sub> (Called Semi-Pinacol rearrangement). Generally migratory aptitude is in the order aryl> tert.-alkyl>sec.-alkyl>primary alkyl, exceptions are always there depending upon conditions. Among aryls electron donating at para and meta increase the migratory aptitude while at ortho decrease the migratory aptitude.</strong></b>
+    </p>
+  </div>
+</body>
+</html>

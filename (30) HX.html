@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title>Centered Text with Image</title>
+  
+  <!-- Importing Montserrat font from Google Fonts -->
+  <link href = "https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel = "stylesheet">
+  
+  <style>
+    /* Basic reset for margins and paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Set body height to 100% to cover the entire screen */
+    body, html {
+      height: 100%;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    /* Flexbox centering */
+    .centered-text {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      justify-content: flex-start; /* Align items to the top of the viewport */
+      align-items: center; /* Center content horizontally */
+      text-align: left; /* Align text to the left */
+      padding: 20px; /* Some padding for better look */
+      font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+      overflow-y: auto; /* Enable vertical scrolling */
+      max-width: 80%; /* Limit the maximum width of the container */
+      margin: auto; /* Center the container horizontally */
+    }
+
+    /* Image styling */
+    img {
+      width: 50%; /* Set the width of the image */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px; /* Space between image and text */
+    }
+
+    /* Text below image */
+    .image-text {
+      width: 50%; /* Match the width of the text to the image */
+      margin-top: 10px; /* Add some space between text and image */
+      line-height: 1.6; /* Optional: Adjust line height for better readability */
+      color: grey; /* Set text color to grey */
+      /* Remove padding-left to align text directly under image */
+      padding: 0; /* Reset any padding */
+    }
+
+    /* Add media query for small screens */
+    @media (max-width: 768px) {
+      .centered-text {
+        font-size: 3.5vw; /* Adjust font size based on viewport width for mobile */
+        padding: 20px; /* Ensure padding works well on mobile */
+      }
+
+      img, .image-text {
+        width: 70%; /* Increase image and text size on smaller screens */
+      }
+    }
+
+    /* For larger screens like laptops */
+    @media (min-width: 769px) {
+      .centered-text {
+        font-size: 1.2vw; /* Decrease font size for larger screens */
+        max-width: 70%; /* Limit text width to avoid very long lines */
+      }
+    }
+
+    p {
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+  </style>
+</head>
+
+<body>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/HX%20(1).png" alt="Hydrogenation image">
+    <p class = "image-text">
+        <b> <strong>(1) ADDITION OF HX TO ALKENE: Dry gaseous hydrogen halide (not aqueous) is used to avoid the formation of alcohol. Alkene itself can act as solvent but sometimes we can use solvents like CH<sub>2</sub>Cl<sub>2</sub>. Reactivity order for hydrogen halides is HI>HBr>HCl>HF. Reaction follows ionic mechanism (via carbocation: whenever possible rearrangement takes place-1,2 hydride shift or 1,2 alkyl shift or ring expansion) so more stable carbocation formed by alkene implies more rate of the reaction, the addition mainly takes place by anti-addition predominantly (although in many cases syn product also forms in sufficient amount) . When HBr is added to alkene in the presence of peroxide like R-O-O-R reaction follows free radical mechanism and addition takes place with Anti-Markovnikov rule (Peroxide effect or Kharasch and Mayo effect), This effect is not shown by other hydrogen halides HF, HCl and HI. If we add few inhibitors like dihexylamine or hydroquinone then they will trap the free radical and there will not be any peroxide effect with HBr even though peroxide is present.</strong></b>
+    </p>
+    <p class = "image-text">
+        <b><strong>(2) ADDITION OF HX TO ALKYNE: Alkynes first give vinyl halides then on addition of another molecule of HX we get geminal dihalides. Addition takes place according to Markovnikov\&#8217;s addition. Vinyl carbocation is less reactive than alkyl carbocation so mostly alkenes react faster than alkynes. The addition of HX to vinylhalide occurs less readily than that of alkyne so reaction can be stopped at vinyl halide stage. In the presence of peroxide addition of HBr (not with HF, HCl, HI) takes place by Antimarkovnikov\&#8217;s addition. On hydrolysis these geminal halides give aldehydes and ketones.</strong></b>
+    </p>
+    <p class = "image-text">
+        <b><strong>(3) ADDITION OF HX TO CONJUGATED ALKADIENE: Mixture of 1,2-addition and 1,4-addition products forms and reaction follows ionic mechanism. 1,2-addition product (called kinetically controlled product) forms at low temperature (around -80<sup>o</sup>C) and 1,4-addition product (called thermodynamically controlled product) forms at higher temperature (around +40<sup>o</sup>C). In the presence of peroxide free radical mechanism is followed and we get mixture of 1,2 and 1,4 addition products (similar products are obtained when conjugated alkadienes are treated with Br-CCl<sub>3</sub>, -CCl<sub>3</sub> gets attached at 1st carbon).</strong></b>
+    </p>
+  </div>
+</body>
+</html>

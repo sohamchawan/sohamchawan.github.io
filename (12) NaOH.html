@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title>Centered Text with Image</title>
+  
+  <!-- Importing Montserrat font from Google Fonts -->
+  <link href = "https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel = "stylesheet">
+  
+  <style>
+    /* Basic reset for margins and paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Set body height to 100% to cover the entire screen */
+    body, html {
+      height: 100%;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    /* Flexbox centering */
+    .centered-text {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      justify-content: flex-start; /* Align items to the top of the viewport */
+      align-items: center; /* Center content horizontally */
+      text-align: left; /* Align text to the left */
+      padding: 20px; /* Some padding for better look */
+      font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+      overflow-y: auto; /* Enable vertical scrolling */
+      max-width: 80%; /* Limit the maximum width of the container */
+      margin: auto; /* Center the container horizontally */
+    }
+
+    /* Image styling */
+    img {
+      width: 50%; /* Set the width of the image */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px; /* Space between image and text */
+    }
+
+    /* Text below image */
+    .image-text {
+      width: 50%; /* Match the width of the text to the image */
+      margin-top: 10px; /* Add some space between text and image */
+      line-height: 1.6; /* Optional: Adjust line height for better readability */
+      color: grey; /* Set text color to grey */
+      /* Remove padding-left to align text directly under image */
+      padding: 0; /* Reset any padding */
+    }
+
+    /* Add media query for small screens */
+    @media (max-width: 768px) {
+      .centered-text {
+        font-size: 3.5vw; /* Adjust font size based on viewport width for mobile */
+        padding: 20px; /* Ensure padding works well on mobile */
+      }
+
+      img, .image-text {
+        width: 70%; /* Increase image and text size on smaller screens */
+      }
+    }
+
+    /* For larger screens like laptops */
+    @media (min-width: 769px) {
+      .centered-text {
+        font-size: 1.2vw; /* Decrease font size for larger screens */
+        max-width: 70%; /* Limit text width to avoid very long lines */
+      }
+    }
+
+    p {
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+  </style>
+</head>
+
+<body>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/NaOH%20(1).png" alt="Hydrogenation image">
+    <p class = "image-text">
+        <b> <strong>(1) All compounds which are more acidic than water can be dissolved in aqueous NaOH, like Phenol, Carboxylic acid etc. Alcohols in general are not soluble in NaOH.</strong></b>
+    </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/NaOH%20(2).png" alt="Hydrogenation image">
+    <p class = "image-text">
+        <b> <strong>(2) When primary and secondary alkyl halides (R-X) are reacted with aqueous NaOH (or KOH) alcohols (R-OH) are formed (By substitution SN<sub>2</sub> because OH<sup>&#8211;</sup> is considered to be a strong nucleophile) and small quantity of alkene is also formed. Tertiary alkyl halides give almost alkene as product (By elimination E<sub>2</sub> reaction). Since SN<sub>2</sub> reaction so if in R-X the carbon which is attached with -X (the leaving group) is chiral the inversion takes place called Walden inversion. For SN<sub>2</sub> the reactivity for compounds like RCOCH<sub>2</sub> Cl is very high, for compounds like ROCH<sub>2</sub> Cl reactivity is high, for compounds like C<sub>6</sub>H<sub>5</sub>CH<sub>2</sub>Cl and CH<sub>3</sub>Cl the reactivity is very good then other compounds like allyl halide CH<sub>2</sub>=CH<sub>2</sub>-CH<sub>2</sub>-Cl and then primary alkyl halides. SN<sub>2</sub> reactivity is very poor for compounds like phenyl halide C<sub>6</sub>H<sub>5</sub>-Cl, compounds where L.G is attached at bridge head carbon, tertiary alkyl halides, primary but crowded at beta carbon.</strong></b>
+    </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/NaOH%20(3).png" alt="Hydrogenation image">
+    <p class = "image-text">
+        <b> <strong>(3) When alkyl halides are boiled with ethanolic NaOH or KOH alkenes are obtained. During the elimination here one H (electrofugal atom) and one halogen (nucleofugal atom) leaves. The two leaves with antiperiplanar geometry. The reaction is regioselective in forming more substituted stable product as major product (Saytzeff’s or Zaitsev&#8217;s rule). Hofmann product as minor product (less substituted alkene).</strong></b>
+    </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/NaOH%20(4).png" alt="Hydrogenation image">
+    <p class = "image-text">
+      <b><strong>(4) NaOH/X<sub>2</sub> is an important reagent to test methyl aldehyde or methyl ketone. X<sub>2</sub> can be Cl<sub>2</sub>, Br<sub>2</sub> or I<sub>2</sub>. After the reaction we get a carboxylate salt and haloform. When the reaction is carried out using NaOH and I<sub>2</sub>, iodoform is obtained as yellow crystalline solid. The test is called iodoform test. NaOX can also be used in place of NaOH + X<sub>2</sub>. The haloform test is given aldehydes or ketones having CH<sub>3</sub> CO- group or alcohols having CH<sub>3</sub>CHOH- group. Other bonds like C-C double and triple bonds remain unaffected. Same reagent NaOH (or KOH) + Br<sub>2</sub> (or Cl<sub>2</sub>) can be used for the conversion of primary amides (RCONH<sub>2</sub>) into primary amines containing one carbon atom less than the number of carbon atoms present in the amide (Hofmann bromamide, rearrangement or degradation reaction). This Hofmann bromamide reaction can only be given by amides in which two H atoms are present with N, possible intermediates which have been isolated are RCONHBr, [RCONBr]<sup>&#8211;</sup>, RNCO. Please note in RCONH<sub>2</sub>, R can be alkyl or aryl but if alkyl of more than 7 carbon atoms then yield is low and mainly alkylcyanide RCN is produced. Side reactions in this bromamide reaction is where ureas (RNHCONHR) or acylureas (RCONHCONHR) are obtained by the addition of RNH<sub>2</sub> and RCONH<sub>2</sub> with intermediate alkylisocyanate RNC. A similar reaction where RCONH<sub>2</sub> is treated with Pb(OAc)<sub>4</sub> first RNCO forms which gets converted into RNHCONHR or if RNCO is reacted with R-OH then NaOH RNH<sub>2</sub> forms.</strong></b>
+    </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/NaOH%20(5).png" alt="Hydrogenation image">
+    <p class = "image-text">
+      <b><strong>(5) Aldehydes and ketones that contain at least one alpha H atom undergo dimerization in the presence of dilute NaOH (or KOH or Na<sub>2</sub>CO<sub>3</sub> or acid) to form beta-hydroxyaldehdes and beta-hydroxyketones respectively. These are called aldols and process is aldol addition. When the aldol is heated in presence of an acid it undergoes dehydration and gives alpha-beta-unsaturated aldehydes or ketones. If two different aldehydes and ketones are used reaction is called crossed aldol condensation. In crossed aldol condensation if one component is aromatic aldehyde then reaction is called Claisen reaction. If in place of aldehydes and ketones two esters are used for condensation reaction with base like RONa then beta keto ester forms as product and sometimes this reaction is referred as Claisen condensation and if two esters are present in the same compound intra molecular condensation may take place called Dickmann condensation (used for formation of 5,6,7 membered rings).</strong></b>
+    </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/NaOH%20(6).png" alt="Hydrogenation image">
+    <p class = "image-text">
+      <b><strong>(6) Aldehydes that do not have alpha hydrogen atom undergo self-oxidation and self-reduction (disproportionation) on heating with concentrated NaOH. One molecule gets reduced to alcohol and another molecule gets oxidised to salt of carboxylic acid. There are few exceptions in this like isobutyraldehyde(alpha-monoalkylated aldehydes) although possesses alpha H but undergoes Cannizzaro reaction. A trihaloacetaldehyde does not have alpha H but does not undergo Cannizzaro reaction instead undergoes nucleophilic substitution of -CX<sub>3</sub> by -OH (from NaOH) to give haloform and sodium formate. If two different aldehydes or ketones are used in the reaction it is called crossed Cannizzaro reaction. If formaldehyde (HCHO) is present in crossed Cannizzaro reaction HCHO undergoes oxidation. If the concentration of NaOH in the reaction is very high the order of the reaction will be 4 (Order 2 with respect to Aldehyde and order 2 with respect to NaOH) and if the concentration of NaOH is not very high then overall order will be 3 (Order 2 with respect to aldehyde and 1 with respect to NaOH). Reaction involves transfer of hydride from one aldehyde to another molecule (Rate determining) so even if solution has D<sub>2</sub>O formed alcohol does not contain any alpha-deuterium.</strong></b>
+    </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/NaOH%20(7).png" alt="Hydrogenation image">
+    <p class = "image-text">
+      <b><strong>(7) When sodium or potassium salt of carboxylic acid is heated with soda-lime (NaOH + CaO) undergoes decarboxylation (CO<sub>2</sub> liberates) to form alkane which has one carbon less than the starting carboxylate salt. Reaction follows carbanion mechanism. Another method for getting alkane using decarboxylation is ELECTROLYTIC DECARBOXYLATION also known as Kolbe&#8217;s reaction (when sodium or potassium salt of carboxylic acid (2RCOONa) is electrolysed in water, DMF or methanol using platinum electrodes we get an alkane R-R. Please note there are carboxylic acids (if alpha carbon has resonance electron withdrawing group such as >C=O, -CN, -NO<sub>2</sub>, >C=C&lt;, -COOH which on simply heating undergo decarboxylation by liberating CO<sub>2</sub>.</strong></b>
+    </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/NaOH%20(8).png" alt="Hydrogenation image">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/NaOH%20(9).png" alt="Hydrogenation image">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/NaOH%20(10).png" alt="Hydrogenation image">
+    <p class = "image-text">
+      <b><strong>(8) Kolbe Schmitt Reaction: When sodium phenoxide is treated with CO<sub>2</sub> gas at around 125<sup>o</sup>C and 4 to 7 atm pressure sodium salicylate is formed as the major product which on acidification gives salicylic acid. </strong></b>
+    </p>
+  </div>
+</body>
+</html>

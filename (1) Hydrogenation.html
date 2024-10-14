@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title>Centered Text with Image</title>
+  
+  <!-- Importing Montserrat font from Google Fonts -->
+  <link href = "https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel = "stylesheet">
+  
+  <style>
+    /* Basic reset for margins and paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Set body height to 100% to cover the entire screen */
+    body, html {
+      height: 100%;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    /* Flexbox centering */
+    .centered-text {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      justify-content: flex-start; /* Align items to the top of the viewport */
+      align-items: center; /* Center content horizontally */
+      text-align: left; /* Align text to the left */
+      padding: 20px; /* Some padding for better look */
+      font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+      overflow-y: auto; /* Enable vertical scrolling */
+      max-width: 80%; /* Limit the maximum width of the container */
+      margin: auto; /* Center the container horizontally */
+    }
+
+    /* Image styling */
+    img {
+      width: 50%; /* Set the width of the image */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px; /* Space between image and text */
+    }
+
+    /* Text below image */
+    .image-text {
+      width: 50%; /* Match the width of the text to the image */
+      margin-top: 10px; /* Add some space between text and image */
+      line-height: 1.6; /* Optional: Adjust line height for better readability */
+      color: grey; /* Set text color to grey */
+      /* Remove padding-left to align text directly under image */
+      padding: 0; /* Reset any padding */
+    }
+
+    /* Add media query for small screens */
+    @media (max-width: 768px) {
+      .centered-text {
+        font-size: 3.5vw; /* Adjust font size based on viewport width for mobile */
+        padding: 20px; /* Ensure padding works well on mobile */
+      }
+
+      img, .image-text {
+        width: 70%; /* Increase image and text size on smaller screens */
+      }
+    }
+
+    /* For larger screens like laptops */
+    @media (min-width: 769px) {
+      .centered-text {
+        font-size: 1.2vw; /* Decrease font size for larger screens */
+        max-width: 70%; /* Limit text width to avoid very long lines */
+      }
+    }
+
+    p {
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+  </style>
+</head>
+
+<body>
+  <div class = "centered-text">
+    <img src = "/Users/soham_chawan/Desktop/Hydrogenation (1).png" alt = "Hydrogenation Image 1">
+    <img src = "/Users/soham_chawan/Desktop/Hydrogenation (2).png" alt = "Hydrogenation Image 2">
+    <p class = "image-text">
+        <b>(1) Alkenes and alynes react with hydrogen (H<sub>2</sub>) in the presence of metal catalyst such as Nickel (Ni), Palladium (Pd) and Platinum (Pt) to produce alkanes. More stable alkene means less reactivity for hydrogenation and less heat evovled during hydrogenation (Heat of Hydrogenation). This catalytic reduction is generally used for reduction of nonpolar unsaturations (alkene, alkyne) but can also be used for reduction of polar unsaturation (aldehyde, ketone, nitrile etc.) but it requires strenuous conditions (heat and pressure). Please note that a carbon-carbon unsaturation is more reactive towards this catalytic hydrogenation than other functional groups such as aldehyde, ketone, nitrile, acid, ester, etc. This catalytic hydrogenation is sometimes regioselective (with insufficient hydrogen) for less substituted carbon-carbon double bond in presence of more substituted double bond. Pt is generally used as (PtO<sub>2</sub>)(Adam's Catalyst). In place of Ni we may use Raney Ni for better producibility. Another important point is that addition is syn addition so this catalytic hydrogenation is also STEREOSELECTIVE and STEREOSPECIFIC, it means cis-alkene (symmetrical) on hydrogenation may give meso compound and trans-alkene may give enantiomers (d,l). The dithioacetal or dithioketal when hydrogenated over Raney Ni give corresponding alkane (used in Mozingo reduction). Primary, secondary and tertiary alkyl iodides, tertiary alkyl bromides and chlorides are converted into alkanes. Each double bond consumes one molar equivalent of hydrogen, each triple bond consumes two while rings are unaffected by hydrogenation at room temperature but please note that each ring equates with one unit of hydrogen deficiency also called degree of unsaturation (The number of pairs of hydrogen atoms that must be subtracted from the molecular formula of corresponding alkane to give the molecular formula under consideration). For organic compounds containing containing C, H, N, X, and O. The Degree Of Unsaturation = Number of carbon atoms + 1 - (Number of H atoms / 2) - (Number of halogen atoms / 2) + (Number of N atoms / 2), please note that one double bond is equivalent to one degree of unsaturation, one triple bond is equivalent to two degree of unsaturation and one ring is equivalent to one degree of unsaturtion. Cyclopropane can ve cleaved by catalytic hydrogenolysis to give propane even under mild conditions. Benzene shows some of addition reactions like alkene and alkyne under more drastic conditions to form addition products. It has four degree of unsaturation (3 double bonds and 1 ring). The addition products are stable and behave as saturated hydrocarbons. Hydrogenation of benzene takes place in the presence of catalyst like nickel or palladium at 475K to 500K temperature to give cyclohexane. Hydrogenation can be used to convert a nitro compound to amine but not used when the molecule contains some other easily hydrogenated group like carbon-carbon double bond.</b>
+    </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "/Users/soham_chawan/Desktop/hydrogenation (3).png" alt = "Hydrogenation Image 3">
+    <p class = "image-text">
+        <b>(2) Hydrogention is considered to be heterogenous with Ni, Pt, Pd, Raney Ni, Rhodium, Ruthenium etc. because catalysts are insoluble in reaction medium. Wilkinson's catalyst chlorotris(triphenylphosphine)rhodium, RhCl(PPh<sub>3</sub>)<sub>3</sub> is soluble in reaction medium so with this hydrogenation is homogenous hydrogenation and this is highly regioselective and reduces olefininc compounds (-C=C-) without disturbing groups such as -COOR, -NO<sub>2</sub>, -CN, -COR present in the same molecule. Another homogenous catalyst is tris(triphenylphosphene)hydridoruthenium(II) which is specific for terminal double bonds (others may or may not be reduced). One more is Pentacyanocobaltate(II) for double and triple bonds only when these are part of conjugated system (conjugation can be with >C=O, C=C, or aromatic ring). Homogenous catalysts have advantage of better selectivity and reproducibilty over heterogenous.</sub>  </sub></b>
+    </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "/Users/soham_chawan/Desktop/Hydrogenation (4).png" alt = "Hydrogenation Image 4">
+    <p class = "image-text">
+        <b>(3)Controlled reduction of alkynes with H<sub>2</sub> gas in the presence of partially deactivated catalyst Lindlar's Catalyst gives alkenes. Lindlar catalyst consists of palladium deposited in the finely divided state on a solid support such as CaCO<sub>3</sub> or BaSO<sub>4</sub> which is poisoned or we can say partially deactivated with either Sulphur, Ouinoline, Lead Acetate or Lead Oxide. Non-terminal alkynes are converted into cis-alkene due to syn addition. For the same purpose i.e. controlled hydrogenation of alkynes we can use another catalyst called P-2 catalyst Nickel Boride (Ni<sub>2</sub>B). Nickel Boride is prepared by reduction of Nickel Acetate with NaBH<sub>4</sub> (Sodium borohydride). Another use of Lindlar's catalyst is preperation of aldehydes from acid chloride. Acid halides are reduced to aldehydes when treated with H<sub>2</sub> gas in boiling Xylene in the presence of Lindlar's catalyst</b>
+    </p>
+    </div>
+    <div class = "centered-text">
+        <img src = "/Users/soham_chawan/Desktop/Hydrogenation (5).png" alt = "Hydrogenation Image 5">
+        <p class = "image-text">
+            <b>(4)With H<sub>2</sub>/CuO.CuCr<sub>2</sub>O<sub>4</sub> generally esters are reduced to alcohols and carboxylic acid is also reduced to primary alcohol.</b>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title>Centered Text with Image</title>
+  
+  <!-- Importing Montserrat font from Google Fonts -->
+  <link href = "https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel = "stylesheet">
+  
+  <style>
+    /* Basic reset for margins and paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Set body height to 100% to cover the entire screen */
+    body, html {
+      height: 100%;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    /* Flexbox centering */
+    .centered-text {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      justify-content: flex-start; /* Align items to the top of the viewport */
+      align-items: center; /* Center content horizontally */
+      text-align: left; /* Align text to the left */
+      padding: 20px; /* Some padding for better look */
+      font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+      overflow-y: auto; /* Enable vertical scrolling */
+      max-width: 80%; /* Limit the maximum width of the container */
+      margin: auto; /* Center the container horizontally */
+    }
+
+    /* Image styling */
+    img {
+      width: 50%; /* Set the width of the image */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px; /* Space between image and text */
+    }
+
+    /* Text below image */
+    .image-text {
+      width: 50%; /* Match the width of the text to the image */
+      margin-top: 10px; /* Add some space between text and image */
+      line-height: 1.6; /* Optional: Adjust line height for better readability */
+      color: grey; /* Set text color to grey */
+      /* Remove padding-left to align text directly under image */
+      padding: 0; /* Reset any padding */
+    }
+
+    /* Add media query for small screens */
+    @media (max-width: 768px) {
+      .centered-text {
+        font-size: 3.5vw; /* Adjust font size based on viewport width for mobile */
+        padding: 20px; /* Ensure padding works well on mobile */
+      }
+
+      img, .image-text {
+        width: 70%; /* Increase image and text size on smaller screens */
+      }
+    }
+
+    /* For larger screens like laptops */
+    @media (min-width: 769px) {
+      .centered-text {
+        font-size: 1.2vw; /* Decrease font size for larger screens */
+        max-width: 70%; /* Limit text width to avoid very long lines */
+      }
+    }
+
+    p {
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+  </style>
+</head>
+
+<body>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Br2%20(1).png" alt="Hydrogenation image">
+    <p class = "image-text">
+        <b> <strong>(1) Cl<sub>2</sub> or Br<sub>2</sub> in presence of sunlight, ultraviolet light or heat at high temperature 250 to 500<sup>o</sup>C react with alkanes to form a mixture of mono and poly halo alkanes by successive replacement of the hydrogen atoms form alkanes. The reactivity order is F<sub>2 </sub>&gt;&gt; Cl<sub>2 </sub>&gt; Br<sub>2 </sub>&gt;&gt; I<sub>2</sub>. Since F<sub>2</sub> is so reactive it is difficult to control the reaction so we normally don&#8217;t use fluorination. I<sub>2</sub> is least reactive and reaction is reversible so to carry out the iodination we use some oxidising agents such as HIO<sub>3</sub>, HNO<sub>3</sub>, HgO etc. These halogenations take place with free radical mechanism (Chain reaction). For monohalogenation H can be replaced with halogen from tertiary carbon, secondary carbon and primary carbon atoms and at the same time if in the product any of carbon becomes chiral then with respect to that we one more stereoisomer (enantiomer with respect to that carbon). Alkanes which contain different types of hydrogen atoms (primary, secondary and tertiary hydrogen atoms) the selectivity is in the order benzyl, allyl &gt; tertiary H &gt; secondary H &gt; primary H. Bromine is far more regioselective than chlorine even though it is less reactive than chlorine. In chlorination the relative reactivity for the tertiary, secondary and primary H atoms is 3<sup>o</sup>:2<sup>o</sup>H:1<sup>o</sup>H = 5:3.8:1 (at 25<sup>0</sup>C). and In bromination the relative reactivity for the tertiary, secondary and primary Hydrogen atoms is 3<sup>o</sup>:2<sup>o</sup>H:1<sup>o</sup>H = 1600:82:1 (at 127<sup>o</sup>C). Chlorination can also be effected with sulphuryl chloride (SO<sub>2</sub>Cl<sub>2</sub>) in the presence of light (hv) or free radical initiator like peroxide. NBS can also be used for bromination as it supplies low concentration of Br (especially for allylic and benzylic positions). &nbsp;</strong></b>
+    </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Br2%20(2).png" alt="Hydrogenation image">
+    <p class = "image-text">
+        <b> <strong>(2) Cl<sub>2</sub> or Br<sub>2</sub> in an inert solvent such as CCl<sub>4</sub> react with alkenes to give vicinal dihalides. Order of reactivity for halogens is F<sub>2 </sub>>> Cl<sub>2 </sub>> Br<sub>2 </sub>>> I<sub>2. </sub> Order of reactivity for alkenes is (CH<sub>3</sub>)<sub>2</sub>C=CH<sub>2</sub>> CH<sub>3</sub>CH=CHCH<sub>3</sub>> CH<sub>3</sub>CH=CH<sub>2</sub>> CH<sub>2</sub>=CH<sub>2</sub>. Products are formed by anti-addition. These reactions are stereospecific and stereoselective. cis-But-2-ene gives Racemic mixture of 2,3-Dihaloutane while trans-But-2-ene gives meso-2,3-Dihalobutane. In the reaction cyclohalonium ion forms as an intermediate. Please refer Hunsdiecker Reaction from named reactions. Cl<sub>2</sub> and Br<sub>2</sub> are capable of replacing one or more alpha hydrogen atoms of aldehydes (RCH<sub>2</sub>CHO) or ketones (RCOCH<sub>2</sub>R) in acid or base catalysed reactions to form RCH(Cl)CHO or RCOCH<sub>2</sub>Cl, SO<sub>2</sub>Cl<sub>2</sub> can also be used. Alkynes react with halogens (Cl<sub>2</sub> or Br<sub>2</sub>) in an inert solvent to give first trans-dihaloalkenes then on addition of one more molecule of X<sub>2</sub> vicinal tetrahaloalkanes. Buta-1,3-diene on reaction with one mole of Br<sub>2</sub> or Cl<sub>2</sub> forms two products 1,2-addition product (major at low temp around -80<sup>o</sup>C) and 1,4-addition product due to resonance (major at high temp around 40<sup>o</sup>C). 1,4-addition product is called thermodynamically controlled product while 1,2-addition product is called kinetically controlled product (KCP).</strong></b>
+    </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Br2%20(3).png" alt="Hydrogenation image">
+    <p class = "image-text">
+        <b> <strong>(3) Br<sub>2</sub>/H<sub>2</sub>O or Cl<sub>2</sub>/H<sub>2</sub>O: ALKENES react with a solution of halogen in water to form halohydrins (compounds that contain a halogen and a hydroxy group bonded to adjacent carbon atoms. The net result is the addition of components of HOX (OH negative part and X positive part). Addition takes place in accordance to Markovnikov&#8217;s rule. The reaction is stereoselective as it involves only anti addition. Acetylene reacts with HOCl to form dichloroacetaldehyde and other ALKYNES react as per Markovnikov&#8217;s addition to form 1,2-dichloroalkanone.  PHENOL on treatment with chlorine or bromine water gives an immediate precipitate of the 2,4,6-trihalogen derivative, if gaseous Cl<sub>2</sub> or Br<sub>2</sub> attacks the phenol at around 160<sup>o</sup>C mainly o-halogen derivative is formed, p-bromophenol is prepared by adding Br<sub>2</sub> in CS<sub>2</sub>, please note if phenol has any negative group at o, p such as -NO<sub>2</sub>, -COOH, -SO<sub>3</sub>H on treatment with aqueous halogens (Br<sub>2</sub>/H<sub>2</sub>O) negative group is often displaced.<br></strong></b>
+    </p>
+  </div>
+  <div class = "centered-text">
+  <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Br2%20(4).png" alt="Hydrogenation image">
+    <p class = "image-text">
+      <b><strong>(4) X<sub>2 </sub>(Br<sub>2</sub> or Cl<sub>2</sub>) / AlX<sub>3</sub> (or any Lewis acid such as FeX<sub>3</sub>, BF<sub>3</sub> etc.): This reagent is used for halogenation of benzene ring (electrophilic aromatic substitution &#8211; EAS). H atom of benzene ring gets substituted by halogen atom. Fluorine (F<sub>2</sub>) is highly reactive and mono fluorination is carried out with AgF<sub>2</sub> or XeF<sub>2</sub>. Iodine is unreactive but iodination can be carried out in the presence of an oxidising agent such as HNO<sub>2</sub>, H<sub>2</sub>O<sub>2</sub>. Bromination (addition or substitution) of Anthracene or Phenanthrene takes place at 9-position.</strong></b>
+    </p>
+  </div>
+</body>
+</html>

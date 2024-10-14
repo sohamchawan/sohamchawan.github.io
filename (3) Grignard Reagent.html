@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title>Centered Text with Image</title>
+  
+  <!-- Importing Montserrat font from Google Fonts -->
+  <link href = "https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel = "stylesheet">
+  
+  <style>
+    /* Basic reset for margins and paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Set body height to 100% to cover the entire screen */
+    body, html {
+      height: 100%;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    /* Flexbox centering */
+    .centered-text {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      justify-content: flex-start; /* Align items to the top of the viewport */
+      align-items: center; /* Center content horizontally */
+      text-align: left; /* Align text to the left */
+      padding: 20px; /* Some padding for better look */
+      font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+      overflow-y: auto; /* Enable vertical scrolling */
+      max-width: 80%; /* Limit the maximum width of the container */
+      margin: auto; /* Center the container horizontally */
+    }
+
+    /* Image styling */
+    img {
+      width: 50%; /* Set the width of the image */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px; /* Space between image and text */
+    }
+
+    /* Text below image */
+    .image-text {
+      width: 50%; /* Match the width of the text to the image */
+      margin-top: 10px; /* Add some space between text and image */
+      line-height: 1.6; /* Optional: Adjust line height for better readability */
+      color: grey; /* Set text color to grey */
+      /* Remove padding-left to align text directly under image */
+      padding: 0; /* Reset any padding */
+    }
+
+    /* Add media query for small screens */
+    @media (max-width: 768px) {
+      .centered-text {
+        font-size: 3.5vw; /* Adjust font size based on viewport width for mobile */
+        padding: 20px; /* Ensure padding works well on mobile */
+      }
+
+      img, .image-text {
+        width: 70%; /* Increase image and text size on smaller screens */
+      }
+    }
+
+    /* For larger screens like laptops */
+    @media (min-width: 769px) {
+      .centered-text {
+        font-size: 1.2vw; /* Decrease font size for larger screens */
+        max-width: 70%; /* Limit text width to avoid very long lines */
+      }
+    }
+
+    p {
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+  </style>
+</head>
+
+<body>
+  <div class = "centered-text">
+    <img src="https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Grignu%20(1).png" alt="Hydrogenation image">
+    <p class = "image-text">
+        <b>(1) RMgX Organomagnesium halides (Organometallic compounds) were discovered by the French chemist Victor Grignard in 1900. Grignard reagent is prepared by the reaction of alkyl halide with turnings of magnesium metal in dry ether solvent. It follows reactivity order of RI>RBr>Rcl (very few organomagnesium fluorides have been prepared). Vinyl halides (RCH=CH-X) form Grignard reagents when T.H.F (Tetrahydrofuran) is used as a solvent. ArMgX (Aryl magnesium halides) are preapred using aryl iodides and aryl bromides usually than aryl chlorides (Generally THF solvent is used). The actual structure of Grignard reagent is very complex than the general formula RMgX. Experiments have shown that there is an equilibrium between an alkylmagnesium halide and dialkylmagnesium. Grignard reagent forms a complex with solvent ether which is an important factor in the formation and stability of Grignard reagent. Grignard reagents are strong bases due to negatively charged R. They react with any compound that hash a hydrogen atom attached to electronegative atom such as oxygen, nitrogen, sulphur (even with less acidic compund like 1-alkyne). It is used as base to abstract acidic H (from terminal alkyne, alcohol, -OH, -NH<sub>2</sub>, -NHR, -COOH, -SO<sub>3</sub>H, -SH) to form RH (alkane).</b>
+    </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Grignu%20(2).png" alt = "Hydrogenation Image 2">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Grignu%20(3).png" alt = "Hydrogenation Image 2">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Grignu%20(4).png" alt = "Hydrogenation Image 2">
+    <p class = "image-text">
+        <b>(2) Grignard reagents are powerful nucleophiles also due to R group. It is also used as nucleophile to attack (aldehyde -CHO, ketone -COR) to form alcohol, with formaldehyde it gives primary alcohol, with all other aldehyde it gives secondary alcohol and with ketone it gives tertiary alcohol, for protonation in case of tertiary halomagnesium alkoxide we can use NH<sub>4</sub>Cl to avoid any elimination of formed tertiary alcohol. RMgX can be used as nucleophile to attack ester -COOR', amide -CONH<sub>2</sub>, nitro -No<sub>2</sub>, cyanide -CN, epoxide etc., after reaction if we get ketone then that can react with one more molecule of RMgX if RMgX is given in sufficient amount. The addition of Grignard reagent to an isocyanide is little different than other functional groups,here R and MgX add on to some extent to same carbon. In case of azo (-N=N-) MgX adds on to each N atom and R(C<sub>n</sub>H<sub>2n+1</sub>) group is eliminated as C<sub>n</sub>H<sub>2n</sub>, C<sub>n</sub>H<sub>2n+2</sub>. Grignard reagents carry out nucleophilic attack at a saturated carbon when they react with oxiranes (epoxides) to give primary alcohols, since ring is highly strained the ring opens and the reaction leads to formation of salt of primary alcohol and then protonation leads to formation of primary alcohol. When alpha-beta unsaturated carbonyl compunds R-CH=CH-C(R)=o react with Grignard reagent R"MgX addition occurs in 1,2 or 1,4 positions (Check the reactions). Experiments have shown that which addition product will form depends upon the groups R, R\' and R\". If R\'= H then addition is always 1,2 except when R\" is tertiary alkyl group; in this case both 1,2 and 1,4 or both may occur. Grignard reagents react primarily at the less substituted carbon atom of ring. When a Grignard reagent is treated with solid carbon dioxide and the complex decomposed with dilute acid a mono carboxylic acid is obtained. Solid CO<sub>2</sub> is used in order to attain a low temperature (-70<sup>o</sup>C). If the reaction is carried out at a room temperature, then products are mainly ketone and tertiary alcohol. This method is very useful in preparation of of acids of type R<sub>3</sub>C.COOH, which cannot be prepared using other methods like tertiary alkylcyanide. In similar reaction where we use RMgX with CS<sub>2</sub>, dithioic (RCS<sub>2</sub>H) acid is obtained. With ethyl chloroformate (ClCOOC<sub>2</sub>H<sub>5</sub>) RMgX gives ester (RCOOC<sub>2</sub>H<sub>5</sub>). Cyanogen (C<sub>2</sub>N<sub>2</sub>) reacts with Girgnard reagent RMgX to give Alkyl Cyanide (R-CN). A primary amine (RNH<sub>2</sub>) is obtained when RMgX is reacted Chloramine (ClNH<sub>2</sub>). Alkyl iodide is formed when Grignard reagent (RMgX) is reacted with I<sub>2</sub>. Thio alcohol RSH can be prepared by reacting RMgX and S and then hydration. An alcohol can be obtained in a similar manner when RMgX is reacted with dry Oxygen (O<sub>2</sub>) and then decomposing the product with water. When RMgX us reacted with O=S=O and then decomposing the product with water Sulphinic acid (RSO<sub>2</sub>H) is obtained. When Grignard reagent (e.g. C<sub>2</sub>H<sub>5</sub>MgI) interacts with inorganic halides Grignard reagent acts as a alkylating agent (PbCl<sub>2</sub>) gives tetraethyl lead ((C<sub>2</sub>H<sub>5</sub>)<sub>4</sub>Pb).</b>
+    </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Grignu%20(5).png" alt = "Hydrogenation Image 2">
+    <p class = "image-text">
+        <b>(3) Grignard reagent is a very special reagent used in the organic chemistry but is associated with some limitation. Grignard reagent is a very powerful base (it contains carbanion) so it is not possible to prepare a Grignard reagent from any organic group that contains acidic H (H atoms more acidic than H of alkane or alkene like -OH, -SH, -NH<sub>2</sub>, -COOH, -SO<sub>3</sub> etc.). Even if we try to prepare Grignard reagent with an alkyl halide hab=ving any of these grops Grignard reagent will not form, even if it forms it would react immediately with the acidic H present in the compound and Grignard reagent is that since it is a powerful nucleophile it cannot be prepared from any alkyl halide which contaisn electrophile groups such as aldehyde -CHO, ketone >C=O, ester -COOR, cyanide group -CN, epoxy group etc. It would immediately react with these groups. If Grignard reagent is reacted with an aldehyde, ketone, ester, epoxide etc. that contains acidic H (more than terminal alkyne) Grignard reagent reacts as a base and not as a nucleophile but if we want both acidic H and electrophilic group to get attacked by reagents, we should use more quantity of Grignard reagent. During the preparation of Grignard reagent from normal alkyl halide (R-X) we use dry ether as a solvent, we cannot use aqueous ether or water as solvent because formed Grignard will immediately react with H of water and will form alkane R-H and Grignard reagent will note be there in the system. In some cases, Grignard reagent does not behave normally means it does not react with compounds containing a functional group which is normally capable of reacting. It has been observed that branching of carbon chain near the functional group prevents the reaction (probably due to steric effect), methylmagnesium bromide or iodide does not react with hexamethylaacetone (CH<sub>3</sub>)<sub>3</sub>C.CO.(CH<sub>3</sub>)<sub>3</sub>. Similarly, if the grignad reagent hash large alkyl groups then also reaction can be prevented like methylisopropylketone does not react with tert-butylmagnesium chloride. When allylbromide (CH<sub>2</sub>=CH-CH<sub>2</sub>-Br) is reacted with Mg in dry ether (to prepare Grignard reagent) instead of getting Grignard reagent CH<sub>2</sub>=CH-CH<sub>2</sub>MgBr, we get diallyl (coupling product, Hexa-1,5-diene) as main product. In dihalides of type XCH<sub>2</sub>(CH<sub>2</sub>)<sub>n</sub>CH<sub>2</sub>X, if n=0 and n=1 then Grignard reagent is not formed instead an internal Wurtz reaction takes place to give CH<sub>2</sub>=CH<sub>2</sub> (if n=0) and cyclopropane (if n=1), if n=2 or more then dimagnesion bromide compound is obtained XMgCH<sub>2</sub>(CH<sub>2</sub>)<sub>n</sub>CH<sub>2</sub>MgX, but percentage yield is about 30%. Hydrocarbons containing more carbon atoms (R-R\') than Grignard reagent (RMgX) can be prepared by treating RMgX with alkyl halide (R\'X). RMgX can be reduced to R-H by catalytic reduction (H<sub>2</sub>/Ni), the percentage yield will be good if R\' is allyl or tertiary alkyl.</b>
+    </p>
+</body>
+</html>

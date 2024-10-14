@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title>Centered Text with Image</title>
+  
+  <!-- Importing Montserrat font from Google Fonts -->
+  <link href = "https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel = "stylesheet">
+
+  
+  <style>
+    /* Basic reset for margins and paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Set body height to 100% to cover the entire screen */
+    body, html {
+      height: 100%;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    /* Flexbox centering */
+    .centered-text {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      justify-content: flex-start; /* Align items to the top of the viewport */
+      align-items: center; /* Center content horizontally */
+      text-align: left; /* Align text to the left */
+      padding: 30px; /* Some padding for better look */
+      font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+      overflow-y: auto; /* Enable vertical scrolling */
+      max-width: 80%; /* Limit the maximum width of the container */
+      margin: auto; /* Center the container horizontally */
+    }
+
+    /* Image styling */
+    img {
+      width: 60%; /* Set the width of the image */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px; /* Space between image and text */
+    }
+
+    /* Text below image */
+    .image-text {
+      width: 60%; /* Match the width of the text to the image */
+      margin-top: 10px; /* Add some space between text and image */
+      line-height: 2.0; /* Optional: Adjust line height for better readability */
+      color: Grey; /* Set text color to grey */
+      /* Remove padding-left to align text directly under image */
+      padding: 0; /* Reset any padding */
+    }
+
+    .heading-text {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      justify-content: flex-start; /* Align items to the top of the viewport */
+      align-items: center; /* Center content horizontally */
+      text-align: left; /* Align text to the left */
+      padding: 30px; /* Some padding for better look */
+      font-family: 'Merriweather', sans-serif; /* Apply Merriweather font */
+      overflow-y: auto; /* Enable vertical scrolling */
+      max-width: 80%; /* Limit the maximum width of the container */
+      margin: auto; /* Center the container horizontally */
+    }
+
+    /* Add media query for small screens */
+    @media (max-width: 768px) {
+      .centered-text {
+        font-size: 3.5vw; /* Adjust font size based on viewport width for mobile */
+        padding: 20px; /* Ensure padding works well on mobile */
+      }
+
+      img, .image-text {
+        width: 70%; /* Increase image and text size on smaller screens */
+      }
+    }
+
+    /* For larger screens like laptops */
+    @media (min-width: 769px) {
+      .centered-text {
+        font-size: 1.2vw; /* Decrease font size for larger screens */
+        max-width: 70%; /* Limit text width to avoid very long lines */
+      }
+    }
+
+    p {
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+  </style>
+</head>
+
+<body>
+  <div class = "centered-text">
+    <h4 class = "heading-text">
+      <strong>(1) Sabatier-Senderens Reaction</strong>
+    </h4>
+    <p class="image-text">
+      <b><strong>Catalytic hydrogenation H<sub>2</sub>/Ni. Please refer H<sub>2</sub>/Catalyst.</strong></b>
+    </p>
+  </div>
+  <div class = "centered-text">
+    <h4 class="heading-text">
+        <strong>(2) Wurtz Reaction  </strong>
+    </h4>
+    <p class="image-text">
+        <strong>Please refer Reagent Na for Wurtz reaction, Fittig reaction and Wurtz-Fittig reaction.</strong>
+    </p>
+  </div>
+  <div class = "centered-text">
+    
+    <h4 class="heading-text">
+        <strong>(3) Kolbe&#8217;s Electrolytic Reduction</strong>
+    </h4>
+
+    <p class="image-text">
+        <strong>It is a method for getting alkane using decarboxylation is ELECTROLYTIC DECARBOXYLATION also known as Kolbe&#8217;s electrolytic reduction. When sodium or potassium salt of carboxylic acid (2RCOONa) is electrolysed in water, DMF or methanol using platinum electrodes we get an alkane R-R. There is another decarboxylation method called SODALIME DECARBOXYLATION to convert sodium or potassium salt of carboxylic acid to corresponding alkane. Please refer Reagent NaOH.</strong>
+    </p>
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(1).png" alt="Hydrogenation image">
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(4) Kolbe-Schmidt Reaction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Please refer Reagent NaOH.</strong>
+        </p>
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(5) Frankland Readuction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Please refer Zn.</strong>
+            <br>
+        </p>
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(6) Corey House Synthesis</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Please refer Gilman reagent R<sub>2</sub>CuLi.</strong><br>
+        </p>
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(7)Clemmensen Reduction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Please refer reagent Zn-Hg/Cl.</strong><br>
+        </p>
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(8) Wolff Kishner Reduction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong> Please refer reagent NH<sub>2</sub>-NH<sub>2</sub>.</strong><br>
+        </p>
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(9)Mozingo Reduction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>This is a method to prepare alkane from aldehydes and ketones. First aldehydes or ketones (R<sub>2</sub>C=O) are reacted with Ethane-1,2-dithiol (HS-CH<sub>2</sub>-CH<sub>2</sub>-SH) in the presence of any Lewis acid such as BF<sub>3</sub> to give cyclic dithioketal which on reduction with H<sub>2</sub>/Ni gives alkane (RCH<sub>2</sub>R).&nbsp;&nbsp;&nbsp;&nbsp;</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(2).png" alt="Hydrogenation image"> 
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(10) Hoffmann Elimination</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Hoffmann Elimination also known as exhaustive methylation to produce alkene. First an amine is methylated with excess of CH<sub>3</sub>I to produce a quaternary ammonium salt which is when heated with silver oxide and water gives an alkene (if quaternary ammonium salt has beta H) and a tertiary amine. Less substituted alkene forms as major product (regioselective). The elimination is anti-elimination.&nbsp;&nbsp;</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(2).png" alt="Hydrogenation image"> 
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(11) Cope Elimination</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>When a tertiary amine is treated with H<sub>2</sub>O<sub>2</sub>/C<sub>2</sub>H<sub>5</sub>OH (or RCO<sub>3</sub>H or Caro’s acid H<sub>2</sub>SO<sub>5</sub>) a tertiary amine oxide is formed which when heated (if possess beta H) at around 150<sup>o</sup>C produces an alkene and N,N-Dialkylhydroxylamine. The reaction is stereoselective syn elimination and takes place in a concerted manner via five membered cyclic transition state. Less substituted alkene generally forms as major product. Another method where alkene with syn elimination is obtained pyrolysis of acetate ester. Using this method an alcohol can be converted into alkene. first alcohol is converted into its acetate ester by treating it with acetic anhydride then on heating at around 300 to 600<sup>o</sup>C pyrolysis of acetate ester takes place (six membered cyclic transition state) to give acetic acid and alkene.&nbsp;&nbsp;</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(3).png" alt="Hydrogenation image"> 
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(12) Birch Reduction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Please refer reagent Na.</strong><br>
+        </p>
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(13) Hydroboration Oxidation</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong> Please refer reagent NH<sub>2</sub>-NH<sub>2</sub>.</strong><br>
+        </p>
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(14) Oxymercuration Demercuration</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Alkenes on reaction with mercuric acetate in aqueous solution (oxymercuration) then reduction with NaBH<sub>4</sub> (Demercuration)yield alcohols. Overall, it is addition of water with Markovnikov’s rule and no rearrangement. If we take ROH in place of H<sub>2</sub>O then ethers are formed instead of alcohols and reaction is called Solvomercuration Demercuration.</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(4).png" alt="Hydrogenation image"> 
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(15) Haloform Reaction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Please refer reagent NaOH.</strong><br>
+        </p>
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(16) Aldol Condensation</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Please refer reagent NaOH.</strong><br>
+        </p>
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(17) Cannizzaro Reaction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Please refer reagent NaOH.</strong><br>
+        </p>
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(18) Perkin Reaction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Aromatic aldehydes undergo condensation with aliphatic acid anhydride having at least two alpha hydrogen atoms when heated with sodium salt of acid to give beta-aryl-alpha-beta-unsaturated aldehydes. The reaction is called Perkin Reaction.</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(5).png" alt="Hydrogenation image"> 
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(19) Knoevenagel Reaction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Active hydrogen compounds (e.g. CH<sub>3</sub>COCH<sub>2</sub>COOC<sub>2</sub>H<sub>5</sub>) condense with aldehydes and ketones known as Knoevenagel condensations. These aldol like condensation are catalysed by weak bases such as amines {(C<sub>2</sub>H<sub>5</sub>)<sub>2</sub>NH}.</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(6)%20.png" alt="Hydrogenation image">
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(7).png" alt="Hydrogenation image"> 
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(20) Tishchenko Reaction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Active hydrogen compounds (e.g. CH<sub>3</sub>COCH<sub>2</sub>COOC<sub>2</sub>H<sub>5</sub>) condense with aldehydes and ketones known as Knoevenagel condensations. These aldol like condensation are catalysed by weak bases such as amines {(C<sub>2</sub>H<sub>5</sub>)<sub>2</sub>NH}.</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(8).png" alt="Hydrogenation image"> 
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(21) Reformatsky Reaction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Aldehydes and ketones react with esters of alpha bromocarboxylic acids in presence of metallic Zn in anhydrous ether to form beta-Hydroxy esters. The reaction is known as Reformatsky Reaction. These esters can be dehydrated to give alpha-beta- unsaturated esters.</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(9).png" alt="Hydrogenation image"> 
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(22) Benzoin Condensation</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>When benzaldehyde (or other aromatic aldehyde) (C<sub>6</sub>H<sub>5</sub>CHO) is heated with aqueous ethanolic KCN it dimerises to give alpha hydroxyketone known as benzoin (C<sub>6</sub>H<sub>5</sub>COCHOHC<sub>6</sub>H<sub>5</sub>). Benzoin on oxidation with dilute nitric acid gives Benzil (C<sub>6</sub>H<sub>5</sub>COCOC<sub>6</sub>H<sub>5</sub>). When Benzil is heated with aqueous NaOH it undergoes rearrangement to form Benzilic acid . The reaction is known as benzilic acid rearrangement. Aliphatic 1,2-diketones also undergo similar rearrangement.&nbsp;</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(10).png" alt="Hydrogenation image"> 
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(23) Pinacol Pinacolone Rearrangement</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Please refer reagent H<sub>2</sub>SO<sub>4</sub>.</strong><br>
+        </p> 
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(24) Baeyer Villiger Rearrangement</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Please refer reagent per-oxyacid RCO<sub>3</sub>H.</strong><br>
+        </p> 
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(25) Rosenmund Reduction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Acid halides are reduced to aldehydes when treated with H<sub>2</sub> gas in boiling Xylene in the presence of Lindlar&#8217;s catalyst. Please refer H<sub>2</sub>/Catalyst.</strong><br>
+        </p>  
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(26) Beckmann Rearrangement (CONVERSION OF KETOXIMES INTO AMIDES)</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Ketoximes (RR&#8217;C=NOH) when treated with acidic reagents such as Concentrated H<sub>2</sub>SO<sub>4</sub>, they rearrange to substituted amides (RCONHR’ or R&#8217;CONHR). The group that migrates is generally the one anti to -OH of oxime but when attached alkyl groups of oxime are both bulky then mixtures of two amides are possible (RCONHR&#8217; and R&#8217;CONHR). The oximes of cyclic ketones give ring enlargement. Among other reagents used are SOCl<sub>2</sub>, PCl<sub>5</sub>, HCOOH, Liquid SO<sub>2</sub>, HMPA, P<sub>2</sub>O<sub>5</sub> -Methanesulphonic acid, HCl-HOAc-AC<sub>2</sub>O, Silica gel and polyphosphoric acid. Please refer reagent H<sub>2</sub>SO<sub>4</sub>.</strong><br>
+        </p>  
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(27) Hofmann Bromamide Reaction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Please refer reagent NaOH.</strong><br>
+        </p>
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(28) Reimer Tiemann Reaction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Please refer reagent CHCl<sub>3</sub>.</strong><br>
+        </p>
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(29) Gattermann Reaction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Arenediazonium chlorides and bromides when heated with Cu powder in presence of corresponding hydrogen halide acid give aryl chlorides and bromides respectively. Reactions are called Gattermann reactions. This is a modification of Sandmeyer Reaction.</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(11).png" alt="Hydrogenation image">  
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(30) Gattermann Koch Reaction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>When benzene or its derivative is treated with carbon monooxide (CO) and hydrogen chloride (HCl) in the presence of anhydrous aluminium chloride (AlCl<sub>3</sub>) or cuprous chloride (CuCl). It gives benzaldehyde or substituted benzaldehyde. The reaction is known as Gattermann-Koch reaction.</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(12).png" alt="Hydrogenation image">  
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(31) Sandmeyer Reaction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>When Arenediazonium chlorides and bromides when heated with Cuprous chloride in presence of HCl and Cuprous bromide in presence of HBr, the corresponding aryl chlorides and bromides are formed respectively. Reactions are called Sandmeyer reactions.&nbsp;</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(13).png" alt="Hydrogenation image">  
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(32) Finkelstein Reaction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Alkyl iodides R-I are often prepared by the reaction of alkyl chlorides (R-Cl) or alkyl bromides (R-Br) with NaI in dry acetone. This reaction is known as Finkelstein Reaction. This is an example of halogen exchange. NaCl (or NaBr) formed during the reaction is precipitated in dry acetone and facilitates the forward reaction according to Le Chatelier&#8217;s Principle. The reaction proceeds by SN<sup>2</sup> reaction.</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(14).png" alt="Hydrogenation image">  
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(33) Swarts Reaction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong> The best method to synthesis alkyl fluorides is heating an alkyl chloride or bromide in presence of metallic fluoride such as AgF, Hg<sub>2</sub>F<sub>2</sub>, SbF<sub>3</sub> or CoF<sub>2</sub>. The reaction is known as Swarts Reaction. This is another example of halogen exchange reaction.</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(15).png" alt="Hydrogenation image">  
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(34) Friedel Crafts Alkylation and Acylation Reactions</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong> When benzene or substituted benzene is treated with alkyl chloride (R-Cl), alky bezene forms and reaction is known as Friedel Craft Alkylation. Similarly, if benzene or substituted benzene is treated with acid chloride (RCOCl) or acid anhydride (carboxylic acid with H<sub>2</sub>SO<sub>4</sub>), acylbenzene forms (C<sub>6</sub>H<sub>5</sub>COCl) an aromatic ketone. The reaction is known as Friedel craft acylation. Fridel Crafts reactions are not given by benzene rings connected with meta directors (deactivated rings). Aniline does not give Friedel Crafts rection as N of aniline forms a complex with Lewis acid used in reaction. The limitation associated with Friedel Crafts acyalation is if alkyl group of acid chloride is tertiary then acylenium ion breaks into tertiary carbocation and CO and this way tertiary alkyl benzene form which undergoes further acylation (para position).</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(16).png" alt="Hydrogenation image">
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(17).png" alt="Hydrogenation image">  
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(35) Hunsdiecker Reaction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>This reaction is decarboxylative bromination of silver carboxylates. When silver salt of carboxylic acid is heated with Br<sub>2</sub> in dry CCl4 an alkyl bromide is formed with evolution of CO2. The reaction is step down reaction where product possess one carbon less than the starting substrate. The reaction follows free radical mechanism where first acyloxy then alkyl free radical is formed. We can take Carboxylic acid and HgO in place of silver carboxylate to get the same product. Please note When iodine is the reagent, a 1:1 ratio (RCOOAg:I<sub>2</sub>) gives alkyl iodide but if the ratio is 2:1 (RCOOAg:I<sub>2</sub>) then ester(RCOOR) is formed instead of alkyl iodide. The reaction is called Simonini reaction. The same product is obtained with carboxylic salt of Pb.</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(18).png" alt="Hydrogenation image">  
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(36) Fries Rearrangement</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Phenols (C<sub>6</sub>H<sub>5</sub>OH) when treated with acid chlorides (RCOCl) phenyl esters (C<sub>6</sub>H<sub>5</sub>OCOR) are formed. These phenyl esters under suitable conditions undergo Fries rearrangement where phenyl ester is converted into ortho or para hydroxyletons or mixture of both by treatment with AlCl<sub>3</sub>. Low temperatures (60<sup>o</sup>C or less) favour the formation p- isomer whereas high temperatures (above 160<sup>o</sup>C) favours the formation of o- isomer.</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(19).png" alt="Hydrogenation image">  
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(37) Claisen Rearrangement</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Allyl ethers of phenol (C6H5-O-CH2-CH=CH2) when heated at about 200<sup>o</sup>C rearrange to ortho allylphenols. If both O- positions are occupied then allyl group migrates to para position. Claisen rearrangement can be seen in allyl-vinyl ethers also. Claisen rearrangement is an example of sigmatropic rearrangement (Intramolecular rearrangement in which a sigma bonded atom or group flanked by one or more pi electron systems is shifted to a new location of molecule, the total number of sigma and pi bonds remain unchanged).</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(20).png" alt="Hydrogenation image">  
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(38) Benzidine Rearrangement</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Diphenyl hydrazine (C6H5NH-NH-C6H5) rearranges to 4,4-Diaminodiphenyl (NH2-C6H4-C6H4-NH2) i.e., benzidine when warmed with HCl.If para position of one benzene is occupied then instead of p-p coupling o-p coulpling takes place (Diphenyline) OR o- and p- semidine (Ar-NH-Ar&#8217;-NH2) transformations take place according to group attached at para position. If methyl, methoxy type of group is present at p- position the main product will be o-semidine accompanied by small amount of p-semidine. If p- position is occupied by -Cl, -Br, -I or -N(CH<sub>3</sub>)<sub>2</sub> type then main product is diphenyline derivative accompanied by a small amount of o- and p- semidines. All these rearrangements under the influence of HCl or H<sub>2</sub>SO<sub>4</sub> are called Benzidine Rearrangement.</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(21).png" alt="Hydrogenation image">  
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(39) Curtius Rearrangement</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>Acyl azide RCON<sub>3</sub> on heating gives alkyl isocyanate which on hydrolysis gives primary amine RNH<sub>2</sub>. R group migrates from C to N. This method can be used to convert acid chloride or ester into amine because acid chloride or ester can be converted into acylazide by reaction with first N<sub>2</sub>H<sub>4</sub> to get RCONHNH<sub>2</sub> then with HNO<sub>2</sub> to get RCO-N=N<sup>+</sup>=N.</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(22).png" alt="Hydrogenation image">  
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(40) Lossen Rearrangement</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>This method is for the conversion of acid chloride or ester into amine. First RCOCl or RCOOR&#8217; are converted into RCONHOH (Hydroxamic acid) by reaction with hydroxylamine NH<sub>2</sub>OH. When this hydoxamic acid RCONHOH is treated with strong inorganic acid like HCl it undergoes a rearrangement called Lossen rearrangement to give alkyl isocyanate RNCO then it is hydrolysed to get RNH<sub>2</sub>.</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(23).png" alt="Hydrogenation image">  
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(41) Schmidt Reaction (Rearrangement)</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>There are three reactions called by the name Schmidt reaction involving the addition of hydrazoic acid HN<sub>3</sub> to carboxylic acid RCOOH, aldehydes and ketones and alcohols and olefins. The most common one is reaction with carboxylic acid. Sulphuric acid is the most common catalyst used but Lewis acids can also be used. RCOOH when reacted with HN<sub>3</sub> in presence of H<sub>2</sub>/SO<sub>4</sub> first we get alkyl isocyanate RNCO then on hydrolysis we get RNH<sub>2</sub>. Percentage yield is better than Hofmann or curtius rearrangement and good results are obtained for long chain R. Reaction between ketone (RCOR) and HN<sub>3</sub> is used to insert NH group between carbonyl C and one R. With alkyl and aryl group it is generally aryl group that migrates from C to N.</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(24).png" alt="Hydrogenation image">  
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(42) Gabriels Phthalimide Synthesis</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong> It is used for the preparation of pure primary amine (uncontaminated with secondary and tertiary amines). Halides RX are converted into primary amines RNH<sub>2</sub> by reacting with potassium phthalimide and then hydrolysis. Aromatic amines can’t be prepared by this method as Aryl halides don’t undergo SN<sup>2</sup> reactions.</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(25).png" alt="Hydrogenation image">  
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(43) Etard Reaction (CrO<sub>2</sub>Cl<sub>2</sub>)</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>When toluene C<sub>6</sub>H<sub>5</sub>-CH<sub>3</sub> is treated with chromyl chloride CrO<sub>2</sub>Cl<sub>2</sub> in inert solvents such as CS<sub>2</sub> or CCl<sub>4</sub> an insoluble complex C<sub>6</sub>H<sub>5</sub>-CH(OCrCl<sub>2</sub>OH)<sub>2</sub> forms which on hydrolysis gives benzaldehyde C<sub>6</sub>H<sub>5</sub>-CHO. Alkyl benzenes where side chains are larger than methyl (e.g. C<sub>6</sub>H<sub>5</sub>-CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub>) are oxidised at the terminal carbon (e.g. C<sub>6</sub>H<sub>5</sub>-CH<sub>2</sub>CH<sub>2</sub>CHO).</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(26).png" alt="Hydrogenation image">  
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(44) Wittig Reaction</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>When toluene C<sub>6</sub>H<sub>5</sub>-CH<sub>3</sub> is treated with chromyl chloride CrO<sub>2</sub>Cl<sub>2</sub> in inert solvents such as CS<sub>2</sub> or CCl<sub>4</sub> an insoluble complex C<sub>6</sub>H<sub>5</sub>-CH(OCrCl<sub>2</sub>OH)<sub>2</sub> forms which on hydrolysis gives benzaldehyde C<sub>6</sub>H<sub>5</sub>-CHO. Alkyl benzenes where side chains are larger than methyl (e.g. C<sub>6</sub>H<sub>5</sub>-CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub>) are oxidised at the terminal carbon (e.g. C<sub>6</sub>H<sub>5</sub>-CH<sub>2</sub>CH<sub>2</sub>CHO).</strong><br>
+        </p>
+        <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Named%20Reaction%20(27).png" alt="Hydrogenation image">  
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(45) Elimination Reactions</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong> A reaction which involves removal of two atoms or groups from same molecule (carbene or nitrene forms). In alpha elimination (1,1) two atoms/groups are lost from same atom, in beta (1,2) elimination two atoms/groups are lost from adjacent atoms of the substrate (multiple bonds form). Dehydration of alcohols (refer reagent H<sub>2</sub>SO<sub>4</sub>) and dehydrohalogenation (refer reagent NaOH) are two important examples of beta elimination. Elimination reactions generally follow E<sub>1</sub> (first order), E<sub>2</sub> (second order), E<sub>i</sub> or E&lt;<sub>1CB</sub> (second order) mechanisms. If reagent is strong base like OH-, C<sub>2</sub>H<sub>5</sub>O- it favours E<sub>2</sub> and (also favours E<sub>1CB</sub> if beta H is acidic). For both E<sub>1</sub> and E<sub>2</sub> reactivity of substrate favours as 3<sup>o</sup>>2<sup>o</sup>>1<sup>o</sup>. Alpha alkyl or alpha aryl groups stabilise the carbocation character of Transition State (T.S) so favours E<sub>1</sub>, Beta aryl groups favour E<sub>1CB</sub>. Please note whatever be the mechanism a double bond does not go to a bridge head carbon unless sizes are large enough (8 or more). Newly double bond favours if it is in conjugation with C=C or C=O. In cyclohexane elimination is possible from diaxial conformation, if more stable conformer participates in elimination, then rate will be more. If the substrate has more than one beta H then double bond is formed at different locations. More substituted alkene (Saytzeff or Zaitsev&#8217;s product) will be more stable and major in most cases. Least substituted alkene is called Hofmann\&#8217;s product. Compounds containing charged nucleofugal leaving group (e.g. -N<sup>+</sup>R<sub>3</sub>, -S<sup>+</sup>R<sub>2</sub>) follow hoffmann elimination, for alkyl halides Hofmann product increases from I to F but major in F only (due to carbanion character in transition state). Hofmann elimination also increases with increase in branching in base (Me<sub>3</sub>C-O-).</strong><br>
+        </p>  
+    </div>
+    <div class = "centered-text">
+        <h4 class="heading-text">
+            <strong>(46) Substitution Reactions</strong>
+        </h4>
+
+        <p class="image-text">
+            <strong>An atom or group is replaced by another atom or group. Substitution reactions effected by nucleophiles are called nucleophilic substitution (different mechanisms are SN<sub>1</sub> i.e., first order, SN<sub>2</sub> i.e., second order or SN<sub>i</sub> i.e., second order. In SN<sub>1</sub> carbocation forms as intermediate and product forms with retention as well as inversion (predominant) i.e., partial racemisation. In SN<sub>2</sub> reaction nucleophile attacks from backside so inversion occurs in the product but we can&#8217;t say if reactant is dextro or R then product can be dextro as well as leavo means R or S depending upon group replaced. For SN<sub>2</sub> reactivity of different substrate generally varies as RCOCH<sub>2</sub>Cl > RNHCH<sub>2</sub>Cl > ROCH<sub>2</sub>Cl > C<sub>6</sub>H<sub>5</sub>CH<sub>2</sub>Cl = CH<sub>3</sub>Cl > CH<sub>2</sub>=CH-CH<sub>2</sub>Cl > Me<sub>2</sub>CHCl > Me<sub>3</sub>CCl. For SN<sub>1</sub> the reactivity generally varies as RNHCH<sub>2</sub>Cl > ROCH<sub>2</sub>Cl > Ph<sub>2</sub>CH-Cl> Me<sub>3</sub>C-Cl > PhCH<sub>2</sub>Cl > Me<sub>2</sub>C-Cl > MeCl. If leaving group (e.g., Halogen) is attached to vinylic carbon or phenyl or bridgehead carbon then reactivity will be low for both SN<sub>1</sub> and SN<sub>2</sub>. Generally weak nucleophiles like H<sub>2</sub>O, CH<sub>3</sub>OH favour SN<sub>1</sub> and strong nucleophiles like C<sub>2</sub>H<sub>5</sub>O- favour SN<sub>2</sub>. Polar protic solvents like H<sub>2</sub>O favour SN<sub>1</sub> because reactivity of nucleophile decreases and stability of carbocation increases in polar protic solvent by solvation. In many substitution reactions a nucleophilic group within a molecule close to the electrophilic carbon participates temporarily in the reaction to control both rate and stereochemistry. Such involvement of a group is known as neighbouring group participation (NGP) and rate enhancement is known as anchimeric assistance. Halobenzenes do not undergo normal SN<sub>1</sub> and SN<sub>2</sub> substitution but if they have one or more electron withdrawing groups such as -NO<sub>2</sub>, -CHO, -CN etc. at ortho or para positions then can undergo substitution under milder conditions (SN<sub>Ar</sub> mechanism) to form ipso product (nucleophile is attached with same carbon from where leaving group leaves) with reactivity order ArF > ArCl > ArBr > ArI. But if aryl halides have no activating electron withdrawing groups then benzyne mechanism is possible with strong base NaNH<sub>2</sub>, here ipso and cine (substitution at different position &#8211; adjacent) products possible with reactivity order ArI > ArBr > ArCl > ArF.</strong><br>
+        </p>  
+    </div>
+</body>
+</html>

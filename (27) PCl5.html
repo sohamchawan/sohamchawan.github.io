@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title>Centered Text with Image</title>
+  
+  <!-- Importing Montserrat font from Google Fonts -->
+  <link href = "https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel = "stylesheet">
+  
+  <style>
+    /* Basic reset for margins and paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Set body height to 100% to cover the entire screen */
+    body, html {
+      height: 100%;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    /* Flexbox centering */
+    .centered-text {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      justify-content: flex-start; /* Align items to the top of the viewport */
+      align-items: center; /* Center content horizontally */
+      text-align: left; /* Align text to the left */
+      padding: 20px; /* Some padding for better look */
+      font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+      overflow-y: auto; /* Enable vertical scrolling */
+      max-width: 80%; /* Limit the maximum width of the container */
+      margin: auto; /* Center the container horizontally */
+    }
+
+    /* Image styling */
+    img {
+      width: 50%; /* Set the width of the image */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px; /* Space between image and text */
+    }
+
+    /* Text below image */
+    .image-text {
+      width: 50%; /* Match the width of the text to the image */
+      margin-top: 10px; /* Add some space between text and image */
+      line-height: 1.6; /* Optional: Adjust line height for better readability */
+      color: grey; /* Set text color to grey */
+      /* Remove padding-left to align text directly under image */
+      padding: 0; /* Reset any padding */
+    }
+
+    /* Add media query for small screens */
+    @media (max-width: 768px) {
+      .centered-text {
+        font-size: 3.5vw; /* Adjust font size based on viewport width for mobile */
+        padding: 20px; /* Ensure padding works well on mobile */
+      }
+
+      img, .image-text {
+        width: 70%; /* Increase image and text size on smaller screens */
+      }
+    }
+
+    /* For larger screens like laptops */
+    @media (min-width: 769px) {
+      .centered-text {
+        font-size: 1.2vw; /* Decrease font size for larger screens */
+        max-width: 70%; /* Limit text width to avoid very long lines */
+      }
+    }
+
+    p {
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+  </style>
+</head>
+
+<body>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/PCl5%20(1).png" alt="Hydrogenation image">
+    <p class = "image-text">
+        <b> <strong>(1) CONVERSION OF ALCOHOL INTO ALKYL CHLORIDE: Alkyl chlorides can be prepared from corresponding alcohols by the reaction with PCl<sub>5</sub> (yellow white solid) at room temperature. PBr<sub>5</sub> converts alcohols to alkyl bromide. PI<sub>5</sub> is highly unstable. The reaction take place by SN<sub>2</sub> mechanism (inversion in configuration) where PCl<sub>5</sub> gets converted into POCl<sub>3</sub> and HCl. Phosphorous Trihalides (PX<sub>3</sub>) can also be used for the conversion of alcohol into alkyl halide in the same manner (PX<sub>3</sub> gets converted into H<sub>3</sub>PO<sub>3</sub>), PCl<sub>3</sub> and PBr<sub>3</sub> are stable but PI<sub>3</sub> is unstable so it is generated in situ by heating red P with I<sub>2</sub>. Please note generally primary and secondary alcohols are converted into alkyl halide, tertiary alcohols mainly undergo elimination so alkyl halides are not obtained in a good yield.</strong></b>
+    </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/PCl5%20(2).png" alt="Hydrogenation image">
+    <p class = "image-text">
+        <b> <strong>(2) CONVERSION OF CARBOXYLIC ACID INTO ACID CHLORIDE AND PRIMARY AMIDES TO NITRILES: Acid chlorides can be obtained by reacting carboxylic acid with PCl<sub>5</sub> or PCl<sub>3</sub>. Acetic anhydride gives acetyl chloride. Primary acid amides (RCONH<sub>2</sub>) are converted into RCN by dehydration.</strong></b>
+    </p>
+    <p class = "image-text">
+      <b><strong>(3) ALDEHYDES AND KETONES are converted into terminal and non-terminal geminal dichlorides respectively.</strong></b>
+  </div>
+  <div class = "centered-text">
+    <p class = "image-text">
+        <b> <strong>(4) BECKMANN REARRANGEMENT (CONVERSION OF KETOXIMES INTO AMIDES): Ketoximes (RR\&#8217;C=NOH) when treated with acidic reagents such as PCl<sub>5</sub>, they rearrange to substituted amides (RCONHR&#8217; or R&#8217;CONHR). The group that migrates is generally the one anti to -OH of oxime but when attached alkyl groups of oxime are both bulky then mixtures of two amides are possible (RCONHR&#8217; and R&#8217;CONHR). The oximes of cyclic ketones give ring enlargement. Among other reagents used are SOCl<sub>2</sub>, Concentrated H<sub>2</sub>SO<sub>4</sub>, HCOOH, Liquid SO<sub>2</sub>, HMPA, P<sub>2</sub>O<sub>5</sub> -Methanesulphonic acid, HCl-HOAc-AC<sub>2</sub>O, Silica gel and polyphosphoric acid. </strong></b>
+    </p>
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/PCl5%20(3).png" alt="Hydrogenation image">
+  </div>
+</body>
+</html>

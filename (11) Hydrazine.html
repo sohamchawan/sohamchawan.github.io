@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title>Centered Text with Image</title>
+  
+  <!-- Importing Montserrat font from Google Fonts -->
+  <link href = "https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel = "stylesheet">
+  
+  <style>
+    /* Basic reset for margins and paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Set body height to 100% to cover the entire screen */
+    body, html {
+      height: 100%;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    /* Flexbox centering */
+    .centered-text {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      justify-content: flex-start; /* Align items to the top of the viewport */
+      align-items: center; /* Center content horizontally */
+      text-align: left; /* Align text to the left */
+      padding: 20px; /* Some padding for better look */
+      font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+      overflow-y: auto; /* Enable vertical scrolling */
+      max-width: 80%; /* Limit the maximum width of the container */
+      margin: auto; /* Center the container horizontally */
+    }
+
+    /* Image styling */
+    img {
+      width: 50%; /* Set the width of the image */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px; /* Space between image and text */
+    }
+
+    /* Text below image */
+    .image-text {
+      width: 50%; /* Match the width of the text to the image */
+      margin-top: 10px; /* Add some space between text and image */
+      line-height: 1.6; /* Optional: Adjust line height for better readability */
+      color: grey; /* Set text color to grey */
+      /* Remove padding-left to align text directly under image */
+      padding: 0; /* Reset any padding */
+    }
+
+    /* Add media query for small screens */
+    @media (max-width: 768px) {
+      .centered-text {
+        font-size: 3.5vw; /* Adjust font size based on viewport width for mobile */
+        padding: 20px; /* Ensure padding works well on mobile */
+      }
+
+      img, .image-text {
+        width: 70%; /* Increase image and text size on smaller screens */
+      }
+    }
+
+    /* For larger screens like laptops */
+    @media (min-width: 769px) {
+      .centered-text {
+        font-size: 1.2vw; /* Decrease font size for larger screens */
+        max-width: 70%; /* Limit text width to avoid very long lines */
+      }
+    }
+
+    p {
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+  </style>
+</head>
+
+<body>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Hydrazine%20(1).png" alt="Hydrogenation image">
+    <p class = "image-text">
+        <b> <strong>(1) Aldehydes -CHO and Ketones >C=O react with Hydrazine (NH<sub>2</sub>-NH<sub>2</sub>) to form Hydrazones (-CH=N-NH<sub>2</sub>) from Aldehydes and >C=N-NH<sub>2</sub>from Ketones. Esters (RCOOR) on reaction with hydrazine give acid hydrazides RCONHNH<sub>2</sub> and alcohol ROH.</strong></b>
+    </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Hydrazine%20(2).png" alt="Hydrogenation image">
+    <p class = "image-text">
+        <b> <strong>(2) This is a special reagent used to convert aldehydes and ketones (>C=O) into alkane (>CH<sub>2</sub>). Aldehydes or ketones first react with hydrazine to form the corresponding hydrazone derivatives and then on heating that hydrazone with strong base in a high boiling solvent to give alkane. The reaction is called Wolff-Kishner Reduction. The temperature of the reaction depends upon the strength of base and nature of solvent used. The reduction can be affected at room temperature by using tert-butoxide as base and DMSO (dimethylsulphoxide) as solvent. Please note that this method is avoided to convert >C=O into >CH<sub>2</sub> if compound has any base sensitive group like halogen, it can get substituted by base (nucleophile) or elimination may take place of that group. Another reagent which can be used to convert >C=O into >CH<sub>2</sub> is Zn-Hg/HCl (Clemmensen Reduction).</strong></b>
+    </p>
+  </div>
+  <div class = "centered-text">
+    <img src = "https://raw.githubusercontent.com/sohamchawan/Organic-Chemistry-Photos/main/Hydrazine%20(3).png" alt="Hydrogenation image">
+    <p class = "image-text">
+        <b> <strong>(3) NH<sub>2</sub>-NH<sub>2</sub> gets oxidised with H<sub>2</sub>O<sub>2</sub> to give Diimide (HN=NH) cis and trans. The cis-diimide is used to transfer two hydrogen atoms to alkene to prepare alkane and diimide itself gets converted into N<sub>2</sub>. This transfer takes place in a concerted manner via a six membered cyclic transition state (a pericyclic reaction). This is a syn addition and stereospecific reaction.</strong></b>
+    </p>
+    <p class = "image-text">
+      <b><strong>STEREOSPECIFIC REACTION: A given stereoisomer reactant leads to one product while another stereoisomer leads to a different opposite product from stereochemistry point of view.</strong></b>
+    </p>
+    <p class = "image-text">
+      <b><strong>STEREOSELECTIVE: Any reaction in which only one of a set of stereoisomers is formed exclusively or predominantly is stereoselective. Please note that all stereospecific reactions are necessarily stereoselective, but the converse is not true. In this hydrogen transfer reaction cis alkene gives meso product while trans alkene gives enantiomers (d,l) or we can say racemic mixture. Another reagent which can be used for similar hydrogen transfer to akene in the same manner is cyclohexene in presence palladium catalyst, where cyclohexene itself gets converted into benzene.</strong></b>
+    </p>
+  </div>
+</body>
+</html>
